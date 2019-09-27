@@ -1,0 +1,5 @@
+\babel@toc {english}{}
+\contentsline {section}{\numberline {1}\IeC {\CYRZ }\IeC {\cyra }\IeC {\cyrd }\IeC {\cyra }\IeC {\cyrn }\IeC {\cyri }\IeC {\cyre }}{3}{section.1}% 
+\contentsline {section}{\numberline {2}\IeC {\CYRR }\IeC {\cyre }\IeC {\cyrsh }\IeC {\cyre }\IeC {\cyrn }\IeC {\cyri }\IeC {\cyre }}{4}{section.2}% 
+\contentsline {section}{\numberline {3}\IeC {\CYRT }\IeC {\cyra }\IeC {\cyrb }\IeC {\cyrl }\IeC {\cyri }\IeC {\cyrc }\IeC {\cyra } \IeC {\cyro }\IeC {\cyrt }\IeC {\cyrv }\IeC {\cyre }\IeC {\cyrt }\IeC {\cyro }\IeC {\cyrv }}{5}{section.3}% 
+\contentsline {section}{\numberline {4}\IeC {\CYRV }\IeC {\cyrery }\IeC {\cyrv }\IeC {\cyro }\IeC {\cyrd }}{5}{section.4}% 
