@@ -1,0 +1,76 @@
+/home/s269359/lab0/:
+итого 9
+-r--r--r-- 2 s269359 studs 334 сент. 29 17:05 abra2
+-rw-r--r-- 1 s269359 studs 158 сент. 29 17:05 abra2_49
+-rw-rw-rw- 1 s269359 studs  20 сент. 29 17:05 carracosta6
+lrwxrwxrwx 1 s269359 studs  10 сент. 29 17:05 Copy_91 -> reuniclus9
+drwx-wxr-x 5 s269359 studs   5 сент. 29 17:05 duosion9
+drwxrwxr-x 5 s269359 studs   5 сент. 29 17:05 grumpig3
+----rw-rw- 1 s269359 studs 155 сент. 29 17:05 magmar5
+drwx-wxrw- 4 s269359 studs  11 сент. 29 17:05 reuniclus9
+
+/home/s269359/lab0/duosion9:
+итого 5
+dr-x--x-wx 2 s269359 studs 2 сент. 29 17:05 golbat
+drwxrwx--- 2 s269359 studs 2 сент. 29 17:05 spoink
+dr-xr-x--- 2 s269359 studs 2 сент. 29 17:05 whirlpede
+
+/home/s269359/lab0/duosion9/golbat:
+итого 0
+
+/home/s269359/lab0/duosion9/spoink:
+итого 0
+
+/home/s269359/lab0/duosion9/whirlpede:
+итого 0
+
+/home/s269359/lab0/grumpig3:
+итого 5
+drwx--x--x 2 s269359 studs 2 сент. 29 17:05 gastrodon
+drwx-wx-wx 2 s269359 studs 2 сент. 29 17:05 gible
+drwx--xrwx 3 s269359 studs 4 сент. 29 17:05 snorunt
+
+/home/s269359/lab0/grumpig3/gastrodon:
+итого 0
+
+/home/s269359/lab0/grumpig3/gible:
+итого 0
+
+/home/s269359/lab0/grumpig3/snorunt:
+итого 3
+-rw-r--r-- 1 s269359 studs 20 сент. 29 17:05 carracosta6
+drwxr-xr-x 5 s269359 studs  5 сент. 29 17:05 grumpig3
+
+/home/s269359/lab0/grumpig3/snorunt/grumpig3:
+итого 5
+drwx--x--x 2 s269359 studs 2 сент. 29 17:05 gastrodon
+drwx--x--x 2 s269359 studs 2 сент. 29 17:05 gible
+drwx--xr-x 2 s269359 studs 3 сент. 29 17:05 snorunt
+
+/home/s269359/lab0/grumpig3/snorunt/grumpig3/gastrodon:
+итого 0
+
+/home/s269359/lab0/grumpig3/snorunt/grumpig3/gible:
+итого 0
+
+/home/s269359/lab0/grumpig3/snorunt/grumpig3/snorunt:
+итого 1
+-rw-r--r-- 1 s269359 studs 20 сент. 29 17:05 carracosta6
+
+/home/s269359/lab0/reuniclus9:
+итого 10
+dr-x--x-wx 2 s269359 studs   2 сент. 29 17:05 blitzle
+-rw--w---- 1 s269359 studs  79 сент. 29 17:05 golett
+-r--r--r-- 2 s269359 studs 334 сент. 29 17:05 golettabra
+dr-x--x-wx 2 s269359 studs   2 сент. 29 17:05 lampent
+-----w--w- 1 s269359 studs  83 сент. 29 17:05 sandshrew
+-r--r----- 1 s269359 studs  20 сент. 29 17:05 spoink
+-r--r--r-- 1 s269359 studs  20 сент. 29 17:05 vigoroth
+-r--r--r-- 1 s269359 studs 334 сент. 29 17:05 vigorothabra
+lrwxrwxrwx 1 s269359 studs  10 сент. 29 17:05 vigorothmagmar -> ../magmar5
+
+/home/s269359/lab0/reuniclus9/blitzle:
+итого 0
+
+/home/s269359/lab0/reuniclus9/lampent:
+итого 0

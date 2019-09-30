@@ -62,7 +62,7 @@ for i in bins:
     y.append(
         2.66 *
         np.exp(- ((i - 4.76)**2)/(2 * 0.15 * 0.15)))
-plt.plot(bins, y, color='black')
+#plt.plot(bins, y, color='black')
 plt.xlim([4.28, 5.22])
 n, bins, patches = plt.hist(values, 10, density=1, color = 'aquamarine', edgecolor = 'black')
 plt.tight_layout()
