@@ -1,0 +1,145 @@
+% Created 2019-09-20 Пт 15:13
+% Intended LaTeX compiler: pdflatex
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage{grffile}
+\usepackage{longtable}
+\usepackage{wrapfig}
+\usepackage{rotating}
+\usepackage[normalem]{ulem}
+\usepackage{amsmath}
+\usepackage{textcomp}
+\usepackage{amssymb}
+\usepackage{capt-of}
+\usepackage{hyperref}
+\usepackage[T2A]{fontenc}
+\usepackage[a4paper,left=3cm,top=2cm,right=1.5cm,bottom=2cm,marginparsep=7pt,marginparwidth=.6in]{geometry}
+\usepackage{cmap}
+\usepackage[russian]{babel}
+\usepackage{xcolor}
+\usepackage{listings}
+\author{АВТОР}
+\date{\today}
+\title{}
+\hypersetup{
+ pdfauthor={АВТОР},
+ pdftitle={},
+ pdfkeywords={},
+ pdfsubject={},
+ pdfcreator={Emacs 26.1 (Org mode 9.1.9)}, 
+ pdflang={Russian}}
+\begin{document}
+\DeclareFixedFont{\ttb}{T1}{txtt}{bx}{n}{12} % for bold
+\DeclareFixedFont{\ttm}{T1}{txtt}{m}{n}{12}
+\definecolor{deepblue}{rgb}{0,0,0.5}
+\definecolor{deepred}{rgb}{0.6,0,0}
+\definecolor{deepgreen}{rgb}{0,0.5,0}
+\newcommand\pythonstyle{\lstset{
+language=Python,
+basicstyle=\ttm,
+otherkeywords={self},             % Add keywords here
+keywordstyle=\ttb\color{deepblue},
+emph={MyClass,__init__},          % Custom highlighting
+emphstyle=\ttb\color{deepred},    % Custom highlighting style
+stringstyle=\color{deepgreen},
+frame=tb,                         % Any extra options here
+showstringspaces=false            % 
+}}
+\newcommand\pythonexternal[2][]{{
+\pythonstyle
+\lstinputlisting[#1]{#2}}}
+\large
+\thispagestyle{empty}
+\begin{center}
+\textbf{Санкт-Петербургский Национальный Исследовательский}\\
+\textbf{Университет Информационных Технологий, Механики и Оптики}\\
+\textbf{Факультет Программной Инженерии и Компьютерной Техники}\\
+\end{center}
+\vspace{1em}
+\begin{center}
+\includegraphics[width=120px]{../../../itmo-logo.png}
+\end{center}
+\LARGE
+\vspace{5em}
+\begin{center}
+\textbf{Вариант № 8}\\
+\textbf{Лабораторная работа № 3}\\
+\Large
+\textbf{по дисциплине}\\
+\LARGE
+\textbf{\emph{'Информатика'}}\\
+\end{center}
+\vspace{11em}
+\large
+\begin{flushright}
+\textbf{Выполнил:}\\
+\textbf{Студент группы P3113}\\
+\textbf{\emph{Куперштейн Дмитрий;} : 269359}\\
+\textbf{Преподаватель:}\\
+\textbf{\emph{Малышева Татьяна Алексеевна}}\\
+\end{flushright}
+\vspace{4em}
+\large
+\begin{center}
+\textbf{Санкт-Петербург 2019 г.}
+\end{center}
+\pagebreak{}
+\setcounter{tocdepth}{2}
+\tableofcontents
+\vspace{2em}
+\pagebreak{}
+\section{Задание}
+\begin{enumerate}
+	\item Создать следующего вида исходный файл из десяти строк,
+содержащий в каждой строке ФИО, дату рождения, дату получения
+паспорта и баллы ЕГЭ по трём предметам:
+	\begin{table}[htb]
+	\centering
+	\begin{tabular}{|l|}
+	\hline
+	Апельсинов А.А. 08.02.2000 17.03.2014 90 100 91\\
+	Виноградов В.В. 09.03.1999 15.04.2013 67 99 98\\
+	Яблоков Я.Я. 10.04.2000 19.05.2014 94 94 94\\
+	Морковкин М.М. 11.05.1999 17.06.2013 91 82 73\\
+	\hline
+	\end{tabular}
+	\end{table}
+	\item Не используя готовые сторонние подключаемые функции для
+факториала, int(), bin() и т.п., написать программу на языке Python
+3.x, которая бы вычисляла среднее значение баллов ЕГЭ,
+сортировала строки по указанной колонке в обратном порядке (от
+большего к меньшему) и выводила результат следующего вида
+(для сортировки по дате рождения):
+	\begin{table}[htb]
+	\centering
+	\begin{tabular}{|l|}
+	\hline
+	Яблоков Я.Я. | 10.04.2000 | 19.05.2014 | 94 94 94 -> 94\\
+	Апельсинов А.А. | 08.02.2000 | 17.03.2014 | 90 100 91 -> 93,666666\\
+	Морковкин М.М. | 11.05.1999 | 17.06.2013 | 91 82 73 -> 82\\
+	Виноградов В.В. | 09.03.1999 | 15.04.2013 | 67 99 98 -> 88\\
+	\hline
+	\end{tabular}
+	\end{table}
+	\item Написать вывод по итогам выполнения лабораторной работы.
+	\item Проверить, что все пункты задания выполнены и выполнены верно.
+	\item Написать отчёт о проделанной работе.
+	\item Подготовиться к устным вопросам на защите\\
+\end{enumerate}
+По данным таблицы для варианта 8 сортировку следует выполнять по среднему значению балла ЕГЭ
+\pagebreak{}
+\section{Скрипт}
+\footnotesize
+\pythonexternal{../int_lab3.py}
+\pagebreak{}
+\small
+\section{Содержание файла с данными}
+\lstinputlisting[inputencoding=cp1251]{../input_file_1251.txt}
+\section{Результат работы}
+\lstinputlisting[inputencoding=cp1251]{../out_1251.txt}
+\large
+\section{Вывод}
+Да собственно ничему и не научился. Попрогал на питоне лишний раз
+\end{document}
