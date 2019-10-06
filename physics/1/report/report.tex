@@ -1,0 +1,134 @@
+% Created 2019-09-20 Пт 15:13
+% Intended LaTeX compiler: pdflatex
+\documentclass[11pt]{article}
+\usepackage{multirow}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage{grffile}
+\usepackage{longtable}
+\usepackage{wrapfig}
+\usepackage{rotating}
+\usepackage[normalem]{ulem}
+\usepackage{amsmath}
+\usepackage{textcomp}
+\usepackage{amssymb}
+\usepackage{capt-of}
+\usepackage{hyperref}
+\usepackage[T2A]{fontenc}
+\usepackage[a4paper,left=3cm,top=2cm,right=1.5cm,bottom=2cm,marginparsep=7pt,marginparwidth=.6in]{geometry}
+\usepackage{cmap}
+\usepackage[russian]{babel}
+\usepackage{xcolor}
+\usepackage{listings}
+\usepackage{makecell}
+\author{АВТОР}
+\date{\today}
+\title{}
+\hypersetup{
+ pdfauthor={АВТОР},
+ pdftitle={},
+ pdfkeywords={},
+ pdfsubject={},
+ pdfcreator={Emacs 26.1 (Org mode 9.1.9)}, 
+ pdflang={Russian}}
+{\renewcommand{\arraystretch}{1.5}
+\begin{document}
+\begin{table}[htb]
+\centering
+\large
+\caption{}
+\begin{tabular}{|c|c|c|c|}
+		\hline
+		$x,$ \textit{м} & $x',$ \textit{м} & $h_0,$ \textit{мм}  & $h'_0,$ \textit{мм}\\
+		\hline
+		$0,22 \pm 0,005$& $1,0 \pm 0,005$& $196\pm 0,5$ &$ 194 \pm 0,5$\\
+		\hline
+	\end{tabular}
+\end{table}
+\begin{table}[htb]
+	\caption{Результаты прямых измерений (Задание 1)}
+	\centering
+	\large
+	\begin{tabular}{|c|c|c|c|c|c|c|}
+		\hline
+		\multirow{2}{*}{\textnumero} & \multicolumn{4}{c}{Измеренные величины} & \multicolumn{2}{|c|}{Рассчитанные величины}\\
+		\cline{2-7}
+						      & $x_1,$ \textit{м}  & $x_2,$ \textit{м}  & $t_1, c$  & $t_2, c$   & $x_2 - x_1, $ \textit{м} & $\frac{t^2_{2} - t^2_1}{2}, c^2$\\
+		\hline
+		1 & $0,15 \pm 0,005$ & $0,40 \pm 0,005$ & $1,3 \pm 0,1$ & $2,6 \pm 0,1$ & $0,25 \pm 0,005$ & $2,54  \pm 0,005$\\
+		\hline
+		2 & $0,15 \pm 0,005$ & $0,50 \pm 0,005$ & $1,2 \pm 0,1$ & $2,9 \pm 0,1$ & $0,35 \pm 0,005$ & $3,49  \pm 0,005$\\
+		\hline
+		3 &$0,15 \pm 0,005$ & $0,70 \pm 0,005$ & $1,3 \pm 0,1$& $3,6 \pm 0,1$ & $0,55 \pm 0,005$ & $5,64  \pm 0,005$\\
+		\hline
+		4 & $0,15 \pm 0,005$ & $0,90 \pm 0,005$ & $1,3 \pm 0,1$& $4,1 \pm 0,1$ & $0,75 \pm 0,005$ & $7,56  \pm0,005$\\
+		\hline
+		5 & $0,15 \pm 0,005$ & $1,10 \pm 0,005$ & $1,2 \pm 0,1$& $4,6 \pm 0,1$ &$0,95 \pm 0,005$  & $9,86  \pm 0,005$\\
+		\hline
+	\end{tabular}
+\end{table}
+$a = 0,09$
+{\renewcommand{\arraystretch}{1.3}
+\pagebreak
+\begin{table}[htb]
+	\caption{Результаты прямых измерений (Задание 2)}
+	\centering
+	\large
+	\begin{tabular}{|c|c|c|c|c|c|}
+		\hline
+		N\textsubscript{ПЛ} & $h$,  \textit{мм}& $h'$,  \textit{мм}& \textnumero & $t_1, c$ & $t_2, c$\\
+		\hline
+		\multirow{5}{*}{1} & \multirow{5}{*}{187} & \multirow{5}{*}{193} & 1 & $1,2$ & $4,5$\\	
+		\cline{4-6}
+		&&& 2 & $1,3$ & $4,6$\\
+		\cline{4-6}
+		&&& 3 & $1,2$ & $4,5$\\
+		\cline{4-6}
+		&&& 4 & $1,3$ & $4,6$\\
+		\cline{4-6}
+		&&& 5 & $1,4$ & $4,7$\\
+		\hline
+		\multirow{5}{*}{2} & \multirow{5}{*}{178} & \multirow{5}{*}{193} & 1 & $0,9$ & $3,2$\\	
+		\cline{4-6}
+		&&& 2 & $0,9$ & $3,2$\\
+		\cline{4-6}
+		&&& 3 & $0,8$ & $3,1$\\
+		\cline{4-6}
+		&&& 4 & $0,9$ & $3,2$\\
+		\cline{4-6}
+		&&& 5 & $0,9$ & $3,2$\\
+		\hline
+		\multirow{5}{*}{3} & \multirow{5}{*}{169} & \multirow{5}{*}{193} & 1 & $0,7$ & $2,6$\\	
+		\cline{4-6}
+		&&& 2 & $0,7$ & $2,6$\\
+		\cline{4-6}
+		&&& 3 & $0,7$ & $2,5$\\
+		\cline{4-6}
+		&&& 4 & $0,7$ & $2,5$\\
+		\cline{4-6}
+		&&& 5 & $0,7$ & $2,5$\\
+		\hline
+		\multirow{5}{*}{4} & \multirow{5}{*}{160} & \multirow{5}{*}{192} & 1 & $0,7$ & $2,2$\\	
+		\cline{4-6}
+		&&& 2 & $0,6$ & $2,1$\\
+		\cline{4-6}
+		&&& 3 & $0,7$ & $2,1$\\
+		\cline{4-6}
+		&&& 4 & $0,7$ & $2,2$\\
+		\cline{4-6}
+		&&& 5 & $0,7$ & $2,2$\\
+		\hline
+		\multirow{5}{*}{5} & \multirow{5}{*}{151} & \multirow{5}{*}{192} & 1 & $0,7$ & $2,0$\\	
+		\cline{4-6}
+		&&& 2 & $0,7$ & $2,0$\\
+		\cline{4-6}
+		&&& 3 & $0,7$ & $2,0$\\
+		\cline{4-6}
+		&&& 4 & $0,7$ & $2,0$\\
+		\cline{4-6}
+		&&& 5 & $0,7$ & $2,0$\\
+		\hline
+	\end{tabular}
+\end{table}
+\end{document}

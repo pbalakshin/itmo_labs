@@ -1,20 +1,17 @@
 package moves;
 
-import ru.ifmo.se.pokemon.Pokemon;
-import ru.ifmo.se.pokemon.Stat;
-import ru.ifmo.se.pokemon.StatusMove;
-import ru.ifmo.se.pokemon.Type;
+import ru.ifmo.se.pokemon.*;
 
-/*public class SweetScent extends StatusMove { FIXME
-    public  SweetScent() {
+public class SweetScent extends StatusMove {
+    private Effect decEv;
+
+    public SweetScent() {
+        super(Type.NORMAL, 0.0, 1.0);
+        Effect decEv = new Effect().chance(1.0).turns(-1).stat(Stat.EVASION, -1);
     }
 
     @Override
-    protected void applyOppEffects(Pokemon pokemon) {
-        double currentEv = pokemon.getStat(Stat.EVASION);
-        if (currentEv > -6.0) {
-            currentEv--;
-        }
-
+    protected void applyOppEffects(Pokemon opp) {
+        opp.setCondition(decEv);
     }
-}*/
+}
