@@ -4,7 +4,7 @@ import moves.DoubleSlap;
 import moves.Facade;
 import moves.SludgeBomb;
 import ru.ifmo.se.pokemon.Pokemon;
-
+import ru.ifmo.se.pokemon.Type;
 
 public class Bunnelby extends Pokemon {
 
@@ -14,5 +14,6 @@ public class Bunnelby extends Pokemon {
         addMove(new Facade());
         addMove(new SludgeBomb());
         addMove(new DoubleSlap());
+        addType(Type.NORMAL);
     }
 }
