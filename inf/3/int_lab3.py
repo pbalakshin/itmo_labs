@@ -1,3 +1,18 @@
+def atoi(string: str):
+    n = 0
+    is_neg = False
+    for i, character in enumerate(string):
+        if ord('0') <= ord(character) <= ord('9'):
+            n = n * 10 + (ord(character) - ord('0'))
+        elif i == 0 and character == '-':
+            is_neg = True
+        else:
+            return
+    if is_neg:
+        n *= -1
+    return n
+
+
 def qsort(digits, key=lambda x: x, reverse=False):
     # quick sort with key
     if len(digits) <= 1:
@@ -39,18 +54,13 @@ db = []
 for line in file_lines:
     split_line = line.split()
     for i in MARK_1, MARK_2, MARK_3:
-        split_line[i] = int(split_line[i])
+        split_line[i] = atoi(split_line[i])
     db.append(tuple(split_line))
 
 avg_marks = []  # average marks
 for i, person in enumerate(db):
     marks_sum = sum(person[MARK_1:MARK_3 + 1])
     avg = marks_sum / 3
-    avg_int = int(avg)
-    if avg == avg_int:
-        avg = avg_int
-    else:
-        avg = round(avg, 6)
     avg_marks.append([avg, i])
 
 sorted_avg_marks = qsort(avg_marks, lambda x: x[0], True)
@@ -58,4 +68,8 @@ sorted_avg_marks = qsort(avg_marks, lambda x: x[0], True)
 for mark in sorted_avg_marks:
     person = db[mark[1]]
     print_person(person)
-    print('->', str(mark[0]).replace('.', ','))
+    if mark[0] % 1 == 0.0:
+        avg_str = str(mark[0]).replace('.0', '')
+    else:
+        avg_str = str(round(mark[0], 6)).replace('.', ',')
+    print('->', avg_str)
