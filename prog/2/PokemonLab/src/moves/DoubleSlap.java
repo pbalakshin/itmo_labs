@@ -5,6 +5,7 @@ import ru.ifmo.se.pokemon.Pokemon;
 import ru.ifmo.se.pokemon.Type;
 
 public class DoubleSlap extends PhysicalMove {
+
     public DoubleSlap() {
         super(Type.NORMAL, 15, 0.85);
     }
@@ -15,21 +16,29 @@ public class DoubleSlap extends PhysicalMove {
     }
 
     @Override
-    protected double calcCriticalHit(Pokemon pokemon, Pokemon pokemon1) {
-        double hit = super.calcCriticalHit(pokemon, pokemon1);
+    protected double calcCriticalHit(Pokemon att, Pokemon def) {
+        double TWO_HIT_RIGHT_EDGE = 0.375;
+        double THREE_HIT_RIGHT_EDGE = 0.75;
+        double FOUR_HIT_RIGHT_EDGE = 0.875;
+        double FIVE_HIT_RIGHT_EDGE = 1.0;
+
         double chance = Math.random();
-        double k = 1.0;
-        if (chance < 0.1665) {
-            k = 2.0;
-        } else if (chance < 0.333) {
-            k = 3.0;
-        } else if (chance < 0.416) {
-            k = 4.0;
-        } else if (chance < 0.499) {
-            k = 5.0;
+        int hits_count = 0;
+        if (chance <= TWO_HIT_RIGHT_EDGE) {
+            hits_count = 2;
+        } else if (chance <= THREE_HIT_RIGHT_EDGE) {
+            hits_count = 3;
+        } else if (chance <= FOUR_HIT_RIGHT_EDGE) {
+            hits_count = 4;
+        } else if (chance <= FIVE_HIT_RIGHT_EDGE) {
+            hits_count = 5;
         }
-        return hit * k;
+
+        double k = hits_count;
+        for (int i = 0; i < hits_count; i++) {
+            k *= super.calcCriticalHit(att, def);
+        }
+
+        return k;
     }
-
-
 }

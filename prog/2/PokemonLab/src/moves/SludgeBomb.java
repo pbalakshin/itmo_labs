@@ -11,8 +11,8 @@ public class SludgeBomb extends SpecialMove {
     }
 
     @Override
-    protected void applyOppEffects(Pokemon pokemon) {
-        pokemon.addEffect(poisonEff);
+    protected void applyOppEffects(Pokemon opp) {
+        opp.addEffect(poisonEff);
     }
 
     @Override
