@@ -8,7 +8,7 @@ import moves.Facade;
 import ru.ifmo.se.pokemon.Type;
 
 public class Shuckle extends Pokemon {
-    public Shuckle(java.lang.String name, int level) {
+    public Shuckle(String name, int level) {
         super(name, level);
 
         setStats(20, 10, 230,10,230,5);
