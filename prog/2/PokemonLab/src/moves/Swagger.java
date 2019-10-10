@@ -13,4 +13,9 @@ public class Swagger extends StatusMove {
         opp.addEffect(inc2Att);
         Effect.confuse(opp);
     }
+
+    @Override
+    protected String describe() {
+        return "swagger";
+    }
 }
