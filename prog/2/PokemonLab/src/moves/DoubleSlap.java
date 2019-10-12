@@ -34,9 +34,9 @@ public class DoubleSlap extends PhysicalMove {
             hits_count = 5;
         }
 
-        double k = hits_count;
+        double k = 0.0;
         for (int i = 0; i < hits_count; i++) {
-            k *= super.calcCriticalHit(att, def);
+            k += super.calcCriticalHit(att, def);
         }
 
         return k;
