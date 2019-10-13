@@ -47,7 +47,7 @@ MARK_1 = 4
 MARK_2 = 5
 MARK_3 = 6
 
-with open('input_file.txt') as file:
+with open('input_file.txt', encoding="utf8") as file:
     file_lines = file.read().splitlines()
 
 db = []
@@ -69,7 +69,7 @@ for mark in sorted_avg_marks:
     person = db[mark[1]]
     print_person(person)
     if mark[0] % 1 == 0.0:
-        avg_str = str(mark[0]).replace('.0', '')
+        avg_str = round(mark[0])
     else:
         avg_str = str(round(mark[0], 6)).replace('.', ',')
     print('->', avg_str)
