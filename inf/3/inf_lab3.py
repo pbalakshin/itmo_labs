@@ -23,7 +23,7 @@ def qsort(digits, key=lambda x: x, reverse=False):
     less = [n for n in digits if key(n) < supp_value]
     supps = [n for n in digits if key(n) == supp_value]
     more = [n for n in digits if key(n) > supp_value]
-    if reversed:
+    if reverse:
         return qsort(more, key, reverse) + \
                supps + qsort(less, key, reverse)
     return qsort(less, key) + supps + \
