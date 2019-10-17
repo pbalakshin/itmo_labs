@@ -7,7 +7,8 @@ import moves.WaterGun;
 import ru.ifmo.se.pokemon.Pokemon;
 import ru.ifmo.se.pokemon.Type;
 
-public class Azumarill extends Pokemon {
+public class Azumarill extends Pokemon
+{
     public Azumarill(String name, int level) {
         super(name, level);
 
@@ -18,6 +19,6 @@ public class Azumarill extends Pokemon {
         addMove(new WaterGun());
         addMove(new Swagger());
         addMove(new BellyDrum());
-        addMove(new Facade());
+        addMove(new WaterGun());
     }
 }

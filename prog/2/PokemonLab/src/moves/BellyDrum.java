@@ -1,12 +1,10 @@
 package moves;
 
-import ru.ifmo.se.pokemon.Pokemon;
-import ru.ifmo.se.pokemon.SpecialMove;
-import ru.ifmo.se.pokemon.Stat;
-import ru.ifmo.se.pokemon.Type;
+import ru.ifmo.se.pokemon.*;
 
 
-public class BellyDrum extends SpecialMove {
+public class BellyDrum extends StatusMove
+{
     public BellyDrum() {
         super(Type.NORMAL, 0.0, 1.0);
     }
@@ -14,7 +12,7 @@ public class BellyDrum extends SpecialMove {
     @Override
     protected void applySelfEffects(Pokemon self) {
         double HP = self.getHP();
-        self.setMod(Stat.HP, (int)(HP / 2 + 0.5));
+        self.setMod(Stat.HP, (int)Math.round(HP / 2));
         self.setMod(Stat.ATTACK, 6);
     }
 

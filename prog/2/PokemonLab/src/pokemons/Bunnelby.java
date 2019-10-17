@@ -6,7 +6,8 @@ import moves.SludgeBomb;
 import ru.ifmo.se.pokemon.Pokemon;
 import ru.ifmo.se.pokemon.Type;
 
-public class Bunnelby extends Pokemon {
+public class Bunnelby extends Pokemon
+{
 
     public Bunnelby(String name, int level) {
         super(name, level);

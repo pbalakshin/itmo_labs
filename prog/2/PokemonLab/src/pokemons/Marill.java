@@ -6,7 +6,8 @@ import moves.WaterGun;
 import ru.ifmo.se.pokemon.Pokemon;
 import ru.ifmo.se.pokemon.Type;
 
-public class Marill extends Pokemon {
+public class Marill extends Pokemon
+{
     public Marill(String name, int level) {
         super(name, level);
 

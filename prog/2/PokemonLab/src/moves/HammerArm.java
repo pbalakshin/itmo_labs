@@ -2,7 +2,8 @@ package moves;
 
 import ru.ifmo.se.pokemon.*;
 
-public class HammerArm extends PhysicalMove {
+public class HammerArm extends PhysicalMove
+{
     private static Effect decSp = new Effect().chance(1.0).turns(-1).stat(Stat.SPEED, -1);
 
     public HammerArm() {

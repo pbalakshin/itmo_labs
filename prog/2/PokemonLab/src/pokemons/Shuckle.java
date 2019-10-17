@@ -7,7 +7,8 @@ import moves.RockThrow;
 import moves.Facade;
 import ru.ifmo.se.pokemon.Type;
 
-public class Shuckle extends Pokemon {
+public class Shuckle extends Pokemon
+{
     public Shuckle(String name, int level) {
         super(name, level);
 

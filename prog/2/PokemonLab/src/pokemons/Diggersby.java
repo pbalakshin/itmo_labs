@@ -7,7 +7,8 @@ import moves.SludgeBomb;
 import ru.ifmo.se.pokemon.Pokemon;
 import ru.ifmo.se.pokemon.Type;
 
-public class Diggersby extends Pokemon {
+public class Diggersby extends Pokemon
+{
     public Diggersby(String name, int level) {
         super(name, level);
 

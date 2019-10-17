@@ -2,7 +2,8 @@ package moves;
 
 import ru.ifmo.se.pokemon.*;
 
-public class Withdraw extends StatusMove {
+public class Withdraw extends StatusMove
+{
     private static Effect incDef;
 
     public Withdraw() {

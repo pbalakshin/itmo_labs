@@ -2,7 +2,8 @@ package moves;
 
 import ru.ifmo.se.pokemon.*;
 
-public class SludgeBomb extends SpecialMove {
+public class SludgeBomb extends SpecialMove
+{
     private static Effect poisonEff = new Effect().chance(0.3).turns(-1).condition(Status.POISON);
 
     public SludgeBomb() {

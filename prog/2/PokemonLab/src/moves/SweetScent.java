@@ -2,7 +2,8 @@ package moves;
 
 import ru.ifmo.se.pokemon.*;
 
-public class SweetScent extends StatusMove {
+public class SweetScent extends StatusMove
+{
     private static Effect decEv = new Effect().chance(1.0).turns(-1).stat(Stat.EVASION, -1);
 
     public SweetScent() {

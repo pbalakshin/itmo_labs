@@ -5,7 +5,8 @@ import moves.WaterGun;
 import ru.ifmo.se.pokemon.Pokemon;
 import ru.ifmo.se.pokemon.Type;
 
-public class Azurill extends Pokemon {
+public class Azurill extends Pokemon
+{
     public Azurill(String name, int level) {
         super(name, level);
 
