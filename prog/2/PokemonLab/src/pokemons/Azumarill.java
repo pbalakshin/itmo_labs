@@ -1,6 +1,7 @@
 package pokemons;
 
 import moves.BellyDrum;
+import moves.Facade;
 import moves.Swagger;
 import moves.WaterGun;
 import ru.ifmo.se.pokemon.Pokemon;
@@ -17,6 +18,6 @@ public class Azumarill extends Pokemon {
         addMove(new WaterGun());
         addMove(new Swagger());
         addMove(new BellyDrum());
-        addMove(new WaterGun());
+        addMove(new Facade());
     }
 }
