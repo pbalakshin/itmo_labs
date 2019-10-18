@@ -1,0 +1,165 @@
+% Created 2019-09-09 Пн 00:07
+% Intended LaTeX compiler: pdflatex
+\documentclass[11pt]{article}
+
+\usepackage[T1]{fontenc}
+\usepackage{indentfirst}
+\usepackage{inconsolata}
+\usepackage{color}
+\definecolor{pblue}{rgb}{0.13,0.13,1}
+\definecolor{pgreen}{rgb}{0,0.5,0}
+\definecolor{pred}{rgb}{0.9,0,0}
+\definecolor{pgrey}{rgb}{0.46,0.45,0.48}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage{grffile}
+\usepackage{longtable}
+\usepackage{wrapfig}
+\usepackage{rotating}
+\usepackage[normalem]{ulem}
+\usepackage{lscape}
+\usepackage{amsmath}
+\usepackage{textcomp}
+\usepackage{amssymb}
+\usepackage{capt-of}
+\usepackage{hyperref}
+\usepackage[T2A]{fontenc}
+\usepackage[a4paper,left=3cm,top=2cm,right=1.5cm,bottom=2cm,marginparsep=7pt,marginparwidth=.6in]{geometry}
+\usepackage{cmap}
+\usepackage[russian, english]{babel}
+\usepackage{xcolor}
+\usepackage{listings}
+
+\usepackage{MnSymbol,wasysym}
+
+\lstset{language=Java,
+  numbers=left,
+  numberstyle=\color{pgrey},
+  showspaces=false,
+  showtabs=false,
+  breaklines=true,
+  showstringspaces=false,
+  breakatwhitespace=true,
+  commentstyle=\color{pgreen},
+  keywordstyle=\color{pblue},
+  stringstyle=\color{pred},
+  basicstyle=\ttfamily,
+  moredelim=[il][\textcolor{pgrey}]{$$},
+  moredelim=[is][\textcolor{pgrey}]{\%\%}{\%\%}
+}
+
+\author{АВТОР}
+\date{\today}
+\title{}
+\hypersetup{
+ pdfauthor={АВТОР},
+ pdftitle={},
+ pdfkeywords={},
+ pdfsubject={},
+ pdfcreator={Emacs 26.1 (Org mode 9.1.9)}, 
+ pdflang={English, Russian}}
+\begin{document}
+
+\large
+\thispagestyle{empty}
+\begin{center}
+\textbf{Санкт-Петербургский Национальный Исследовательский}\\
+\textbf{Университет Информационных Технологий, Механики и Оптики}\\
+\textbf{Факультет Программной Инженерии и Компьютерной Техники}\\
+\end{center}
+\vspace{1em}
+\begin{center}
+\includegraphics[width=120px]{../../../itmo-logo.png}
+\end{center}
+\LARGE
+\vspace{5em}
+\begin{center}
+\textbf{Вариант № 824717}\\
+\textbf{Лабораторная работa № 1}\\
+\Large
+\textbf{по дисциплине}\\
+\LARGE
+\textbf{\emph{'Программирование'}}\\
+\end{center}
+\vspace{11em}
+\large
+\begin{flushright}
+\textbf{Выполнил:}\\
+\textbf{Студент группы P3113}\\
+\textbf{\emph{Куперштейн Дмитрий;} : 269359}\\
+\textbf{Преподаватель:}\\
+\textbf{\emph{Письмак Алексей Евгеньевич}}\\
+\end{flushright}
+\vspace{4em}
+\large
+\begin{center}
+\textbf{Санкт-Петербург 2019 г.}
+\end{center}
+\pagebreak{}
+\setcounter{tocdepth}{2}
+\renewcommand{\contentsname}{Оглавление}
+\tableofcontents
+\vspace{2em}
+\pagebreak{}
+\section{Текст задания}
+\begin{enumerate}
+    \item Создать одномерный массив $a$ типа $long$. Заполнить его нечётными числами от 1 до 23 включительно в порядке убывания. 
+    \item Создать одномерный массив $x$ типа $float$. Заполнить его 16-ю случайными числами в диапазоне от -2.0 до 6.0. 
+    \item Создать двумерный массив $p$ размером 12x16. Вычислить его элементы по следующей формуле (где \begin{math}x = x[j]\end{math}):
+        \begin{itemize}
+            \item если $a[i] = 1$, то $p[i][j] = tan((e^x)^2)$
+            \item если  $a[i] \in \{3, 5, 13, 15, 17, 23\}$, то $p[i][j] = (2 \cdot arcsin(\frac{1}{4} \cdot \frac{x+2}{8}))^3$
+            \item для остальных значений $a[i]$: $p[i][j] = ln(sin ^2(ln((2 \cdot \frac{|x|}{2})^2)))$
+        \end{itemize}
+    \item Напечатать полученный в результате массив в формате с пятью знаками после запятой. 
+\end{enumerate}
+\pagebreak{}
+\section{Исходный код программы}
+\small
+\lstinputlisting{../Lab1.java}
+\pagebreak{}
+\begin{landscape}
+\section{Результат работы программы}
+\footnotesize
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+\hline
+&0 & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 & 10 & 11 & 12 & 13 & 14 & 15\\
+\hline
+   0 & 0.00004 &   0.01585 &   0.01817 &   0.00514 &   0.00497 &   0.01018 &   0.00079 &   0.00000 &   0.02065 &   0.00705 &   0.08970 &   0.04999 &   0.07698 &   0.00336 &   0.00203 &   0.02904\\
+\hline
+  1 & -0.77785 &  -0.03104 &  -0.00000 &  -1.28654 &  -1.03776 &  -0.74793 &  -0.06808 &  -0.03830 &  -0.02566 &  -4.21134 &  -4.28017 &  -1.70775 &  -7.53690 &  -0.08395 &  -0.14228 &  -0.32854\\
+\hline
+  2 & -0.77785 &  -0.03104 &  -0.00000 &  -1.28654 &  -1.03776 &  -0.74793 &  -0.06808 &  -0.03830 &  -0.02566 &  -4.21134 &  -4.28017 &  -1.70775 &  -7.53690 &  -0.08395 &  -0.14228 &  -0.32854\\
+\hline
+   3 & 0.00004 &   0.01585 &   0.01817 &   0.00514 &   0.00497 &   0.01018 &   0.00079 &   0.00000 &   0.02065 &   0.00705 &   0.08970 &   0.04999 &   0.07698 &   0.00336 &   0.00203 &   0.02904\\
+\hline
+   4 & 0.00004 &   0.01585 &   0.01817 &   0.00514 &   0.00497 &   0.01018 &   0.00079 &   0.00000 &   0.02065 &   0.00705 &   0.08970 &   0.04999 &   0.07698 &   0.00336 &   0.00203 &   0.02904\\
+\hline
+   5 & 0.00004 &   0.01585 &   0.01817 &   0.00514 &   0.00497 &   0.01018 &   0.00079 &   0.00000 &   0.02065 &   0.00705 &   0.08970 &   0.04999 &   0.07698 &   0.00336 &   0.00203 &   0.02904\\
+\hline
+  6 & -0.77785 &  -0.03104 &  -0.00000 &  -1.28654 &  -1.03776 &  -0.74793 &  -0.06808 &  -0.03830 &  -0.02566 &  -4.21134 &  -4.28017 &  -1.70775 &  -7.53690 &  -0.08395 &  -0.14228 &  -0.32854\\
+\hline
+  7 & -0.77785 &  -0.03104 &  -0.00000 &  -1.28654 &  -1.03776 &  -0.74793 &  -0.06808 &  -0.03830 &  -0.02566 &  -4.21134 &  -4.28017 &  -1.70775 &  -7.53690 &  -0.08395 &  -0.14228 &  -0.32854\\
+\hline
+  8 & 0.77785 &  -0.03104 &  -0.00000 &  -1.28654 &  -1.03776 &  -0.74793 &  -0.06808 &  -0.03830 &  -0.02566 &  -4.21134 &  -4.28017 &  -1.70775 &  -7.53690 &  -0.08395 &  -0.14228 &  -0.32854\\
+\hline
+   9 & 0.00004 &   0.01585 &   0.01817 &   0.00514 &   0.00497 &   0.01018 &   0.00079 &   0.00000 &   0.02065 &   0.00705 &   0.08970 &   0.04999 &   0.07698 &   0.00336 &   0.00203 &   0.02904\\
+\hline
+   10 & 0.00004 &   0.01585 &   0.01817 &   0.00514 &   0.00497 &   0.01018 &   0.00079 &   0.00000 &   0.02065 &   0.00705 &   0.08970 &   0.04999 &   0.07698 &   0.00336 &   0.00203 &   0.02904\\
+\hline
+   11 & 0.05495 &  -1.49702 &  -2.29821 &   6.36648 &   2.17076 &  -0.26379 &   0.36968 &   0.01871 &  -0.51406 &  -1.72172 &  -1.96644 &   3.11317 & -54.52512 &  -1.36601 &   1.73777 &  -0.57262\\
+\hline
+\end{tabular}
+\\\\\\
+\large
+* Результат работы программы - это форматированный под таблицу текст без ячеек, границ и номеров строк и столбцов. Таблицей приведено в отчёте для читаемости.\\\\
+** Приведённая выше таблица лишь одна из множества возможных, так как результат работы зависит от псевдослучайных чисел.\\\\
+\end{landscape}
+\large
+\section{Вывод}
+В ходе этой лабораторной работы я узнал, что их надо делать, познакомился с особенностями языка Java, средствами для разработки на нём, примитивными типами данных и функциями математической библиотеки.
+\par
+И конечно пока верстал этот отчет немного с \text{\LaTeX}.
+\par
+\end{document}
