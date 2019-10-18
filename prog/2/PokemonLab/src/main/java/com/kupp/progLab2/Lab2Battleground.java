@@ -9,20 +9,13 @@ public class Lab2Battleground
     public static void main(String[] args) {
         Battle battleground = new Battle();
 
-        Pokemon ally1 = new Shuckle("Крутько", 42);
-        Pokemon ally2 = new Diggersby("Здравый смысл", 60);
-        Pokemon ally3 = new Marill("Кожанка", 87);
-        Pokemon foe1 = new Bunnelby("Поляков", 47);
-        Pokemon foe2 = new Azurill("Методичка", 87);
-        Pokemon foe3 = new Azumarill("ПСЖ", 21);
+        battleground.addAlly(new Shuckle("Положить болт на либу", 42));
+        battleground.addAlly(new Diggersby("Прокрастинировать", 60));
+        battleground.addAlly(new Marill("Молится солиду", 87));
 
-        battleground.addAlly(ally1);
-        battleground.addAlly(ally2);
-        battleground.addAlly(ally3);
-
-        battleground.addFoe(foe1);
-        battleground.addFoe(foe2);
-        battleground.addFoe(foe3);
+        battleground.addFoe(new Bunnelby("Юзать солид", 47));
+        battleground.addFoe(new Azurill("Сделать норм либу", 87));
+        battleground.addFoe(new Azumarill("Мы молодцы", 21));
 
         battleground.go();
     }

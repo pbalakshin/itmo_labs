@@ -21,7 +21,27 @@
 \usepackage{cmap}
 \usepackage[russian]{babel}
 \usepackage{xcolor}
+\usepackage{color}
 \usepackage{listings}
+\definecolor{pblue}{rgb}{0.13,0.13,1}
+\definecolor{pgreen}{rgb}{0,0.5,0}
+\definecolor{pred}{rgb}{0.9,0,0}
+\definecolor{pgrey}{rgb}{0.46,0.45,0.48}
+\usepackage{listings}
+\lstset{extendedchars=\true,
+	language=Java,
+	showspaces=false,
+	showtabs=false,
+	breaklines=true,
+	showstringspaces=false,
+	breakatwhitespace=true,
+	commentstyle=\color{pgreen},
+	keywordstyle=\color{pblue},
+	stringstyle=\color{pred},
+	basicstyle=\ttfamily,
+	moredelim=[il][\textcolor{pgrey}]{$$},
+	moredelim=[is][\textcolor{pgrey}]{\%\%}{\%\%}
+}
 \author{АВТОР}
 \date{\today}
 \title{}
@@ -86,10 +106,60 @@
 Классы покемонов должны наследоваться в соответствии с цепочкой эволюции покемонов. На основе базовых классов \texttt{PhysicalMove}, \texttt{SpecialMove} и \texttt{StatusMove} реализовать свои классы для заданных видов атак.\\
 Используя класс симуляции боя \texttt{Battle}, создать 2 команды покемонов (каждый покемон должен иметь имя) и запустить бой.\\
 Базовые классы и симулятор сражения находятся в jar-архиве \texttt{Pokemon.jar} (обновлен 9.10.2018, исправлен баг с добавлением атак и кодировкой). 
-Документация в формате javadoc -- \texttt{https://se.ifmo.ru/~tony/doc/}.
+Документация в формате javadoc -- \texttt{https://se.ifmo.ru/~tony/doc/}.\\\\
+Покемоны для варианта 82002:\\\\
+\includegraphics[width=250px]{../cards.png}\\
+\includegraphics[width=250px]{../cards1.png}
 \pagebreak
-\begin{landscape}
 \section{Диаграмма классов реализованной объектной модели}
-\includegraphics[width=750px]{../Class Diagram1.png}
-\end{landscape}
+\includegraphics[width=500px]{../Diagram1.png}
+\pagebreak
+\section{Исходный код программы}
+\small
+\subsection{\texttt{main.java.com.kupp.progLab2}}
+\subsubsection{Lab2Battleground.java}
+\lstinputlisting[numbers=left, language=java]{../PokemonLab/src/main/java/com/kupp/progLab2/Lab2Battleground.java}
+\subsection{\texttt{main.java.com.kupp.progLab2.moves}}
+\subsubsection{BellyDrum.java}
+\lstinputlisting[numbers=left, language=java]{../PokemonLab/src/main/java/com/kupp/progLab2/moves/BellyDrum.java}
+\pagebreak
+\subsubsection{DoubleSlap.java}
+\lstinputlisting[numbers=left, language=java]{../PokemonLab/src/main/java/com/kupp/progLab2/moves/DoubleSlap.java}
+\subsubsection{Facade.java}
+\lstinputlisting[numbers=left, language=java]{../PokemonLab/src/main/java/com/kupp/progLab2/moves/Facade.java}
+\subsubsection{HammerArm.java}
+\lstinputlisting[numbers=left, language=java]{../PokemonLab/src/main/java/com/kupp/progLab2/moves/HammerArm.java}
+\subsubsection{RockThrow.java}
+\lstinputlisting[numbers=left, language=java]{../PokemonLab/src/main/java/com/kupp/progLab2/moves/RockThrow.java}
+\pagebreak
+\subsubsection{SludgeBomb.java}
+\lstinputlisting[numbers=left, language=java]{../PokemonLab/src/main/java/com/kupp/progLab2/moves/SludgeBomb.java}
+\subsubsection{Swagger.java}
+\lstinputlisting[numbers=left, language=java]{../PokemonLab/src/main/java/com/kupp/progLab2/moves/Swagger.java}
+\subsubsection{SweetScent.java}
+\lstinputlisting[numbers=left, language=java]{../PokemonLab/src/main/java/com/kupp/progLab2/moves/SweetScent.java}
+\subsubsection{WaterGun.java}
+\lstinputlisting[numbers=left, language=java]{../PokemonLab/src/main/java/com/kupp/progLab2/moves/WaterGun.java}
+\subsubsection{Withdraw.java}
+\lstinputlisting[numbers=left, language=java]{../PokemonLab/src/main/java/com/kupp/progLab2/moves/Withdraw.java}
+\pagebreak
+\subsection{\texttt{main.java.com.kupp.progLab2.pokemons}}
+\subsubsection{Azurill.java}
+\lstinputlisting[numbers=left, language=java]{../PokemonLab/src/main/java/com/kupp/progLab2/pokemons/Azurill.java}
+\subsubsection{Marill.java}
+\lstinputlisting[numbers=left, language=java]{../PokemonLab/src/main/java/com/kupp/progLab2/pokemons/Marill.java}
+\subsubsection{Azumarill.java}
+\lstinputlisting[numbers=left, language=java]{../PokemonLab/src/main/java/com/kupp/progLab2/pokemons/Azumarill.java}
+\pagebreak
+\subsubsection{Bunnelby.java}
+\lstinputlisting[numbers=left, language=java]{../PokemonLab/src/main/java/com/kupp/progLab2/pokemons/Bunnelby.java}
+\subsubsection{Diggersby.java}
+\lstinputlisting[numbers=left, language=java]{../PokemonLab/src/main/java/com/kupp/progLab2/pokemons/Diggersby.java}
+\subsubsection{Shuckle.java}
+\lstinputlisting[numbers=left, language=java]{../PokemonLab/src/main/java/com/kupp/progLab2/pokemons/Shuckle.java}
+\section{Результат работы программы}
+\lstinputlisting[numbers=left, language=]{../sample_out.txt}
+\section{Вывод}
+В ходе этой лабораторной работы я поработал с документацией к классу Pokemon и реализовал на его основе заданных покемонов и заданные атаки. 
+
 \end{document}

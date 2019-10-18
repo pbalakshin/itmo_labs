@@ -14,4 +14,9 @@ public class SweetScent extends StatusMove
     protected void applyOppEffects(Pokemon opp) {
         opp.addEffect(decEv);
     }
+
+    @Override
+    protected String describe() {
+        return "use sweet scent";
+    }
 }

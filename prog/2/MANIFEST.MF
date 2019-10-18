@@ -1,2 +1,2 @@
-Main-Class: Lab2Battleground
+Main-Class: main.java.com.kupp.progLab2.Lab2Battleground
 Class-Path: Pokemon.jar

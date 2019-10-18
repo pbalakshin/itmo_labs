@@ -2,7 +2,6 @@ package main.java.com.kupp.progLab2.moves;
 
 import ru.ifmo.se.pokemon.*;
 
-
 public class BellyDrum extends StatusMove
 {
     public BellyDrum() {

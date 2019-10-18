@@ -1,4 +1,4 @@
-source_folder=PokemonLab/src
+source_folder=PokemonLab/src/main/java/com/kupp/progLab2
 bin_folder=PokemonLab/bin
 expected_jar_name=Lab2.jar
 dependaces=Pokemon.jar
