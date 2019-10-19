@@ -14,4 +14,9 @@ public class Withdraw extends StatusMove {
   protected void applySelfEffects(Pokemon self) {
     self.addEffect(incDef);
   }
+
+  @Override
+  protected String describe() {
+    return "withdraw";
+  }
 }
