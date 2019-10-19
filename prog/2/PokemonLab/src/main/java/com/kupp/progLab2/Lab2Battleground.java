@@ -2,7 +2,6 @@ package main.java.com.kupp.progLab2;
 
 import main.java.com.kupp.progLab2.pokemons.*;
 import ru.ifmo.se.pokemon.Battle;
-import ru.ifmo.se.pokemon.Pokemon;
 
 public class Lab2Battleground
 {
