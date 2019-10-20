@@ -1,187 +1,157 @@
-Shuckle Nohtyp from the team Purple enters the battle!
-Bunnelby Avaj from the team White enters the battle!
+Shuckle Nohtyp from the team White enters the battle!
+Bunnelby Avaj from the team Purple enters the battle!
+Bunnelby Avaj struggles. 
+Shuckle Nohtyp loses 6 hit points.
+Bunnelby Avaj loses 2 hit points.
+
+Shuckle Nohtyp facade. 
+Bunnelby Avaj loses 6 hit points.
+
 Bunnelby Avaj throws a sludge bomb. 
 Shuckle Nohtyp loses 4 hit points.
 Shuckle Nohtyp is poisoned
 
 Shuckle Nohtyp threw a rock. 
-Bunnelby Avaj loses 8 hit points.
-
-Bunnelby Avaj slap. 
-Shuckle Nohtyp loses 4 hit points.
-
-Shuckle Nohtyp facade. 
-Bunnelby Avaj loses 12 hit points.
+Bunnelby Avaj loses 13 hit points.
 
 Bunnelby Avaj throws a sludge bomb. 
-Critical hit!
-Shuckle Nohtyp loses 8 hit points.
+Shuckle Nohtyp loses 3 hit points.
 
 Shuckle Nohtyp withdraw. 
-
-Bunnelby Avaj slap. 
-Critical hit!
-Critical hit!
-Shuckle Nohtyp loses 12 hit points.
-
-Shuckle Nohtyp threw a rock. 
-Bunnelby Avaj loses 7 hit points.
-
-Bunnelby Avaj slap. 
-Critical hit!
-Shuckle Nohtyp loses 12 hit points.
-
-Shuckle Nohtyp facade. 
-Bunnelby Avaj loses 10 hit points.
-
-Bunnelby Avaj slap. 
-Critical hit!
-Shuckle Nohtyp loses 10 hit points.
-
-Shuckle Nohtyp use sweet scent. 
-
-Bunnelby Avaj throws a sludge bomb. 
-Shuckle Nohtyp loses 3 hit points.
-
-Shuckle Nohtyp use sweet scent. 
-
-Bunnelby Avaj facade. 
-Shuckle Nohtyp loses 3 hit points.
-
-Shuckle Nohtyp misses
-
-Bunnelby Avaj throws a sludge bomb. 
-Shuckle Nohtyp loses 4 hit points.
-
-Shuckle Nohtyp misses
-
-Bunnelby Avaj facade. 
-Shuckle Nohtyp loses 5 hit points.
-
-Shuckle Nohtyp misses
+Shuckle Nohtyp increases defense.
 
 Bunnelby Avaj struggles. 
 Shuckle Nohtyp loses 4 hit points.
 Bunnelby Avaj loses 1 hit points.
 
-Shuckle Nohtyp facade. 
-Bunnelby Avaj loses 15 hit points.
+Shuckle Nohtyp threw a rock. 
+Bunnelby Avaj loses 8 hit points.
 
 Bunnelby Avaj throws a sludge bomb. 
 Shuckle Nohtyp loses 4 hit points.
 
+Shuckle Nohtyp withdraw. 
+Shuckle Nohtyp increases defense.
+
+Bunnelby Avaj facade. 
+Critical hit!
+Shuckle Nohtyp loses 7 hit points.
+
 Shuckle Nohtyp misses
 
-Bunnelby Avaj slap. 
-Shuckle Nohtyp loses 6 hit points.
-Shuckle Nohtyp faints.
-Diggersby Eht from the team Purple enters the battle!
-Diggersby Eht misses
-
 Bunnelby Avaj facade. 
-Diggersby Eht loses 14 hit points.
+Shuckle Nohtyp loses 3 hit points.
 
-Diggersby Eht facade. 
-Bunnelby Avaj loses 39 hit points.
-
-Bunnelby Avaj facade. 
-Diggersby Eht loses 16 hit points.
-
-Diggersby Eht misses
-
-Bunnelby Avaj facade. 
-Diggersby Eht loses 14 hit points.
-
-Diggersby Eht misses
-
-Bunnelby Avaj facade. 
-Diggersby Eht loses 13 hit points.
-
-Diggersby Eht misses
+Shuckle Nohtyp facade. 
+Critical hit!
+Bunnelby Avaj loses 28 hit points.
 
 Bunnelby Avaj struggles. 
-Diggersby Eht loses 9 hit points.
+Shuckle Nohtyp loses 3 hit points.
+Bunnelby Avaj loses 1 hit points.
+
+Shuckle Nohtyp misses
+
+Bunnelby Avaj struggles. 
+Shuckle Nohtyp loses 5 hit points.
+Bunnelby Avaj loses 1 hit points.
+
+Shuckle Nohtyp facade. 
+Bunnelby Avaj loses 15 hit points.
+
+Bunnelby Avaj struggles. 
+Critical hit!
+Shuckle Nohtyp loses 9 hit points.
 Bunnelby Avaj loses 2 hit points.
 
-Diggersby Eht misses
+Shuckle Nohtyp facade. 
+Bunnelby Avaj loses 14 hit points.
 
 Bunnelby Avaj throws a sludge bomb. 
-Diggersby Eht loses 8 hit points.
+Shuckle Nohtyp loses 3 hit points.
 
+Shuckle Nohtyp facade. 
+Bunnelby Avaj loses 10 hit points.
+Bunnelby Avaj faints.
+Azurill Kcus from the team Purple enters the battle!
+Azurill Kcus struggles. 
+Shuckle Nohtyp loses 6 hit points.
+Azurill Kcus loses 2 hit points.
+
+Shuckle Nohtyp facade. 
+Azurill Kcus loses 11 hit points.
+
+Azurill Kcus shoots with a water gun. 
+Shuckle Nohtyp loses 18 hit points.
+
+Shuckle Nohtyp use sweet scent. 
+Azurill Kcus decreases evasion.
+
+Azurill Kcus struggles. 
+Shuckle Nohtyp loses 4 hit points.
+Azurill Kcus loses 1 hit points.
+Shuckle Nohtyp faints.
+Diggersby Eht from the team White enters the battle!
 Diggersby Eht misses
 
-Bunnelby Avaj throws a sludge bomb. 
-Diggersby Eht loses 11 hit points.
-Diggersby Eht is poisoned
-
-Diggersby Eht misses
-
-Bunnelby Avaj slap. 
-Diggersby Eht loses 16 hit points.
-
-Diggersby Eht misses
-
-Bunnelby Avaj throws a sludge bomb. 
-Diggersby Eht loses 12 hit points.
+Azurill Kcus struggles. 
+Diggersby Eht loses 15 hit points.
+Azurill Kcus loses 4 hit points.
 
 Diggersby Eht throws a sludge bomb. 
 Critical hit!
-Bunnelby Avaj loses 57 hit points.
-Bunnelby Avaj faints.
-Azurill Kcus from the team White enters the battle!
-Diggersby Eht slap. 
-Critical hit!
-Azurill Kcus loses 48 hit points.
+Azurill Kcus loses 84 hit points.
 
 Azurill Kcus shoots with a water gun. 
-Diggersby Eht loses 12 hit points.
+Critical hit!
+Diggersby Eht loses 26 hit points.
 
-Diggersby Eht applies a hammer hand. 
-Azurill Kcus loses 19 hit points.
+Diggersby Eht misses
+
+Azurill Kcus swagger. 
+Diggersby Eht increases attack.
+
+Diggersby Eht misses
 
 Azurill Kcus struggles. 
 Critical hit!
-Diggersby Eht loses 18 hit points.
+Diggersby Eht loses 19 hit points.
 Azurill Kcus loses 5 hit points.
 
 Diggersby Eht slap. 
 Critical hit!
 Critical hit!
-Azurill Kcus loses 40 hit points.
+Azurill Kcus loses 52 hit points.
 
 Azurill Kcus swagger. 
+Diggersby Eht increases attack.
+
+Diggersby Eht facade. 
+Azurill Kcus loses 63 hit points.
+Azurill Kcus faints.
+Azumarill Peed from the team Purple enters the battle!
+Diggersby Eht hits himself in confusion. 
+Diggersby Eht loses 53 hit points.
+
+Azumarill Peed swagger. 
+Diggersby Eht increases attack.
+
+Diggersby Eht throws a sludge bomb. 
+Azumarill Peed loses 76 hit points.
+Azumarill Peed is poisoned
+
+Azumarill Peed swagger. 
+Diggersby Eht increases attack.
 
 Diggersby Eht hits himself in confusion. 
-Diggersby Eht loses 18 hit points.
+Diggersby Eht loses 55 hit points.
 
-Azurill Kcus shoots with a water gun. 
+Azumarill Peed shoots with a water gun. 
+Diggersby Eht loses 6 hit points.
+
+Diggersby Eht facade. 
 Critical hit!
-Diggersby Eht loses 23 hit points.
-Diggersby Eht faints.
-Marill Tseb from the team Purple enters the battle!
-Marill Tseb use belly drum. 
-Marill Tseb loses 116 hit points.
-Marill Tseb increases attack.
-
-Azurill Kcus shoots with a water gun. 
-Marill Tseb loses 7 hit points.
-
-Marill Tseb use belly drum. 
-Marill Tseb loses 54 hit points.
-Marill Tseb increases attack.
-
-Azurill Kcus swagger. 
-
-Marill Tseb use belly drum. 
-Marill Tseb loses 27 hit points.
-Marill Tseb increases attack.
-
-Azurill Kcus struggles. 
-Marill Tseb loses 12 hit points.
-Azurill Kcus loses 3 hit points.
-
-Marill Tseb hits himself in confusion. 
-Marill Tseb loses 24 hit points.
-Marill Tseb faints.
+Azumarill Peed loses 452 hit points.
+Azumarill Peed faints.
 Team Purple loses its last Pokemon.
 The team White wins the battle!

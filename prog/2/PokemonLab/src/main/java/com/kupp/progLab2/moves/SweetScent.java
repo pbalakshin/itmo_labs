@@ -1,9 +1,11 @@
 package main.java.com.kupp.progLab2.moves;
 
-import ru.ifmo.se.pokemon.*;
+import ru.ifmo.se.pokemon.Pokemon;
+import ru.ifmo.se.pokemon.Stat;
+import ru.ifmo.se.pokemon.StatusMove;
+import ru.ifmo.se.pokemon.Type;
 
 public class SweetScent extends StatusMove {
-  private static Effect decEv = new Effect().chance(1.0).turns(-1).stat(Stat.EVASION, -1);
 
   public SweetScent() {
     super(Type.NORMAL, 0.0, 1.0);
@@ -11,7 +13,7 @@ public class SweetScent extends StatusMove {
 
   @Override
   protected void applyOppEffects(Pokemon opp) {
-    opp.addEffect(decEv);
+    opp.setMod(Stat.EVASION, -1);
   }
 
   @Override
