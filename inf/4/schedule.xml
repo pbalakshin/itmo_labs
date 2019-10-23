@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<schedule>
+  <day num="wed"/>
+      <event type="lec"/>
+        <start>10:00</start>
+        <stop>11:30</stop>
+        <class>2219</class>
+	<subject>math</subject>
+	<level>base</level>
+        <building>lomo</building>
+        <teacher>Холодова Светлана Евгеньевна</teacher>
+      <event type="lec"/>
+      <event type="prac"/>
+        <start>11:40</start>
+        <stop>13:10</stop>
+        <class></class>
+	<subject>foreign languages</subject>
+	<level></level>
+        <building>lomo</building>
+        <teacher></teacher>
+      <event type="prac"/>
+      <event type="prac"/>
+        <start>15:20</start>
+        <stop>16:50</stop>
+        <class>1122</class>
+	<subject>math</subject>
+	<level>base</level>
+        <building>lomo</building>
+        <teacher>Попов Антон Игоревич</teacher>
+      <event type="prac"/>
+  <day num="wed"/>
+</schedule>
