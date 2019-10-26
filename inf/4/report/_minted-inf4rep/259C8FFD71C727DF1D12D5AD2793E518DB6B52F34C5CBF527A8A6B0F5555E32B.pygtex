@@ -1,0 +1,34 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{c+cp}{\PYGZlt{}?xml version=\PYGZdq{}1.0\PYGZdq{} encoding=\PYGZdq{}utf\PYGZhy{}8\PYGZdq{}?\PYGZgt{}}
+\PYG{n+nt}{\PYGZlt{}schedule\PYGZgt{}}
+  \PYG{n+nt}{\PYGZlt{}day} \PYG{n+na}{num=}\PYG{l+s}{\PYGZdq{}wed\PYGZdq{}}\PYG{n+nt}{\PYGZgt{}}
+      \PYG{n+nt}{\PYGZlt{}event} \PYG{n+na}{type=}\PYG{l+s}{\PYGZdq{}lec\PYGZdq{}}\PYG{n+nt}{\PYGZgt{}}
+        \PYG{n+nt}{\PYGZlt{}start\PYGZgt{}}10:00\PYG{n+nt}{\PYGZlt{}/start\PYGZgt{}}
+        \PYG{n+nt}{\PYGZlt{}stop\PYGZgt{}}11:30\PYG{n+nt}{\PYGZlt{}/stop\PYGZgt{}}
+        \PYG{n+nt}{\PYGZlt{}class\PYGZgt{}}2219\PYG{n+nt}{\PYGZlt{}/class\PYGZgt{}}
+	    \PYG{n+nt}{\PYGZlt{}subject\PYGZgt{}}math\PYG{n+nt}{\PYGZlt{}/subject\PYGZgt{}}
+	    \PYG{n+nt}{\PYGZlt{}level\PYGZgt{}}base\PYG{n+nt}{\PYGZlt{}/level\PYGZgt{}}
+        \PYG{n+nt}{\PYGZlt{}building\PYGZgt{}}lomo\PYG{n+nt}{\PYGZlt{}/building\PYGZgt{}}
+        \PYG{n+nt}{\PYGZlt{}teacher\PYGZgt{}}Холодова Светлана Евгеньевна\PYG{n+nt}{\PYGZlt{}/teacher\PYGZgt{}}
+      \PYG{n+nt}{\PYGZlt{}/event\PYGZgt{}}
+      \PYG{n+nt}{\PYGZlt{}event} \PYG{n+na}{type=}\PYG{l+s}{\PYGZdq{}prac\PYGZdq{}}\PYG{n+nt}{\PYGZgt{}}
+        \PYG{n+nt}{\PYGZlt{}start\PYGZgt{}}11:40\PYG{n+nt}{\PYGZlt{}/start\PYGZgt{}}
+        \PYG{n+nt}{\PYGZlt{}stop\PYGZgt{}}13:10\PYG{n+nt}{\PYGZlt{}/stop\PYGZgt{}}
+        \PYG{n+nt}{\PYGZlt{}class\PYGZgt{}\PYGZlt{}/class\PYGZgt{}}
+	    \PYG{n+nt}{\PYGZlt{}subject\PYGZgt{}}foreign languages\PYG{n+nt}{\PYGZlt{}/subject\PYGZgt{}}
+	    \PYG{n+nt}{\PYGZlt{}level\PYGZgt{}\PYGZlt{}/level\PYGZgt{}}
+        \PYG{n+nt}{\PYGZlt{}building\PYGZgt{}}lomo\PYG{n+nt}{\PYGZlt{}/building\PYGZgt{}}
+        \PYG{n+nt}{\PYGZlt{}teacher\PYGZgt{}\PYGZlt{}/teacher\PYGZgt{}}
+      \PYG{n+nt}{\PYGZlt{}/event\PYGZgt{}}
+      \PYG{n+nt}{\PYGZlt{}event} \PYG{n+na}{type=}\PYG{l+s}{\PYGZdq{}prac\PYGZdq{}}\PYG{n+nt}{\PYGZgt{}}
+        \PYG{n+nt}{\PYGZlt{}start\PYGZgt{}}15:20\PYG{n+nt}{\PYGZlt{}/start\PYGZgt{}}
+        \PYG{n+nt}{\PYGZlt{}stop\PYGZgt{}}16:50\PYG{n+nt}{\PYGZlt{}/stop\PYGZgt{}}
+        \PYG{n+nt}{\PYGZlt{}class\PYGZgt{}}1122\PYG{n+nt}{\PYGZlt{}/class\PYGZgt{}}
+	    \PYG{n+nt}{\PYGZlt{}subject\PYGZgt{}}math\PYG{n+nt}{\PYGZlt{}/subject\PYGZgt{}}
+	    \PYG{n+nt}{\PYGZlt{}level\PYGZgt{}}base\PYG{n+nt}{\PYGZlt{}/level\PYGZgt{}}
+        \PYG{n+nt}{\PYGZlt{}building\PYGZgt{}}lomo\PYG{n+nt}{\PYGZlt{}/building\PYGZgt{}}
+        \PYG{n+nt}{\PYGZlt{}teacher\PYGZgt{}}Попов Антон Игоревич\PYG{n+nt}{\PYGZlt{}/teacher\PYGZgt{}}
+      \PYG{n+nt}{\PYGZlt{}/event\PYGZgt{}}
+  \PYG{n+nt}{\PYGZlt{}/day\PYGZgt{}}
+\PYG{n+nt}{\PYGZlt{}/schedule\PYGZgt{}}
+\end{Verbatim}

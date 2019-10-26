@@ -1,0 +1,35 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{n+nt}{day}\PYG{p}{:}
+  \PYG{n+nt}{attributes}\PYG{p}{:}
+    \PYG{n+nt}{num}\PYG{p}{:} \PYG{l+lScalar+lScalarPlain}{wed}
+  \PYG{n+nt}{event}\PYG{p}{:}
+    \PYG{n+nt}{attributes}\PYG{p}{:}
+      \PYG{n+nt}{type}\PYG{p}{:} \PYG{l+lScalar+lScalarPlain}{lec}
+    \PYG{n+nt}{start}\PYG{p}{:} \PYG{l+lScalar+lScalarPlain}{10:00}
+    \PYG{n+nt}{stop}\PYG{p}{:} \PYG{l+lScalar+lScalarPlain}{11:30}
+    \PYG{n+nt}{class}\PYG{p}{:} \PYG{l+lScalar+lScalarPlain}{2219}
+    \PYG{n+nt}{subject}\PYG{p}{:} \PYG{l+lScalar+lScalarPlain}{math}
+    \PYG{n+nt}{level}\PYG{p}{:} \PYG{l+lScalar+lScalarPlain}{base}
+    \PYG{n+nt}{building}\PYG{p}{:} \PYG{l+lScalar+lScalarPlain}{lomo}
+    \PYG{n+nt}{teacher}\PYG{p}{:} \PYG{l+lScalar+lScalarPlain}{Холодова Светлана Евгеньевна}
+  \PYG{n+nt}{event1}\PYG{p}{:}
+    \PYG{n+nt}{attributes}\PYG{p}{:}
+      \PYG{n+nt}{type}\PYG{p}{:} \PYG{l+lScalar+lScalarPlain}{prac}
+    \PYG{n+nt}{start}\PYG{p}{:} \PYG{l+lScalar+lScalarPlain}{11:40}
+    \PYG{n+nt}{stop}\PYG{p}{:} \PYG{l+lScalar+lScalarPlain}{13:10}
+    \PYG{n+nt}{class}\PYG{p}{:} 
+    \PYG{n+nt}{subject}\PYG{p}{:} \PYG{l+lScalar+lScalarPlain}{foreign languages}
+    \PYG{n+nt}{level}\PYG{p}{:} 
+    \PYG{n+nt}{building}\PYG{p}{:} \PYG{l+lScalar+lScalarPlain}{lomo}
+    \PYG{n+nt}{teacher}\PYG{p}{:} 
+  \PYG{n+nt}{event2}\PYG{p}{:}
+    \PYG{n+nt}{attributes}\PYG{p}{:}
+      \PYG{n+nt}{type}\PYG{p}{:} \PYG{l+lScalar+lScalarPlain}{prac}
+    \PYG{n+nt}{start}\PYG{p}{:} \PYG{l+lScalar+lScalarPlain}{15:20}
+    \PYG{n+nt}{stop}\PYG{p}{:} \PYG{l+lScalar+lScalarPlain}{16:50}
+    \PYG{n+nt}{class}\PYG{p}{:} \PYG{l+lScalar+lScalarPlain}{1122}
+    \PYG{n+nt}{subject}\PYG{p}{:} \PYG{l+lScalar+lScalarPlain}{math}
+    \PYG{n+nt}{level}\PYG{p}{:} \PYG{l+lScalar+lScalarPlain}{base}
+    \PYG{n+nt}{building}\PYG{p}{:} \PYG{l+lScalar+lScalarPlain}{lomo}
+    \PYG{n+nt}{teacher}\PYG{p}{:} \PYG{l+lScalar+lScalarPlain}{Попов Антон Игоревич}
+\end{Verbatim}

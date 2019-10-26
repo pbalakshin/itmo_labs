@@ -1,0 +1,168 @@
+\documentclass[11pt]{article}
+\usepackage{lscape}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage{grffile}
+\usepackage{longtable}
+\usepackage{graphicx}
+\usepackage{wrapfig}
+\usepackage{rotating}
+\usepackage[normalem]{ulem}
+\usepackage{amsmath}
+\usepackage{textcomp}
+\usepackage{amssymb}
+\usepackage{capt-of}
+\usepackage{hyperref}
+\usepackage[T2A]{fontenc}
+\usepackage[a4paper,left=3cm,top=2cm,right=1.5cm,bottom=2cm,marginparsep=7pt,marginparwidth=.6in]{geometry}
+\usepackage{cmap}
+\usepackage[russian]{babel}
+\usepackage{xcolor}
+\usepackage{minted}
+\usepackage{color}
+\usepackage{listings}
+\definecolor{pblue}{rgb}{0.13,0.13,1}
+\definecolor{pgreen}{rgb}{0,0.5,0}
+\definecolor{pred}{rgb}{0.9,0,0}
+\definecolor{pgrey}{rgb}{0.46,0.45,0.48}
+\definecolor{gray}{rgb}{0.4,0.4,0.4}
+\definecolor{darkblue}{rgb}{0.0,0.0,0.6}
+\definecolor{cyan}{rgb}{0.0,0.6,0.6}
+\usepackage{listings}
+\usepackage{url}
+\urlstyle{same}
+\newcommand\purl[1]{\protect\url{#1}}
+\lstset{
+	extendedchars=\true,
+	showspaces=false,
+	showtabs=false,
+	breaklines=true,
+	showstringspaces=false,
+	breakatwhitespace=true,
+	commentstyle=\color{pgreen},
+	keywordstyle=\color{pblue},
+	stringstyle=\color{pred},
+	basicstyle=\ttfamily,
+	moredelim=[il][\textcolor{pgrey}]{$$},
+	moredelim=[is][\textcolor{pgrey}]{\%\%}{\%\%}
+}
+\lstdefinelanguage{XML}
+{
+	morestring=[b]",
+	morestring=[s]{>}{<},
+	morecomment=[s]{<?}{?>},
+	stringstyle=\color{black},
+	identifierstyle=\color{darkblue},
+	keywordstyle=\color{cyan},
+	morekeywords={xmlns,version,type}% list your attributes here
+}
+\author{АВТОР}
+\date{\today}
+\title{}
+\hypersetup{
+ pdfauthor={АВТОР},
+ pdftitle={},
+ pdfkeywords={},
+ pdfsubject={},
+ pdfcreator={Emacs 26.1 (Org mode 9.1.9)}, 
+ pdflang={Russian}}
+\begin{document}
+\begin{center}
+\textbf{Национальный Исследовательский Университет ИТМО}\\
+\textbf{Факультет Программной Инженерии и Компьютерной Техники}\\
+\end{center}
+\vspace{2em}
+\begin{center}
+\includegraphics[width=120px]{../../../itmo-logo.png}
+\end{center}
+\LARGE
+\vspace{5em}
+\begin{center}
+\textbf{Вариант № 17}\\
+\textbf{Лабораторная работа № 4}\\
+\Large
+\textbf{по дисциплине}\\
+\LARGE
+\textbf{\emph{'Информатика'}}\\
+\end{center}
+\vspace{11em}
+\large
+\begin{flushright}
+\textbf{Выполнил:}\\
+\textbf{Студент группы P3113}\\
+\textbf{\emph{Куперштейн Дмитрий;} : 269359}\\
+\textbf{Преподаватель:}\\
+\textbf{\emph{Малышева Татьяна Алексеевна}}\\
+\end{flushright}
+\vspace{4em}
+\large
+\begin{center}
+\textbf{Санкт-Петербург 2019 г.}
+\end{center}
+\pagebreak{}
+\setcounter{tocdepth}{2}
+\tableofcontents
+\vspace{2em}
+\pagebreak
+\large
+\section{Задание}
+\begin{enumerate}
+	\item Изучить форму Бэкуса-Наура.
+	\item Изучить особенности языков разметки/форматов JSON, YAML, XML,
+	PROTOBUF
+	\item Понять устройство страницы с расписанием для своей группы:\\
+		\texttt{http://www.ifmo.ru/ru/schedule/0/P3200/schedule.htm}
+	\item Исходя из структуры расписания конкретного дня, сформировать
+	файл с расписанием в формате, указанном в задании в качестве
+	исходного.
+	\item Написать программу на языке Python 3.x, которая бы осуществляла
+	парсинг и конвертацию исходного файла в новый.
+	\item Нельзя использовать готовые библиотеки, кроме re (регулярные
+	выражения в Python) и библиотеки для загрузки XML-файлов.
+	\item \underline{Необязательное задание для получения оценки «4» и «5»} (позволяет
+	набрать от 75 до 89 процентов от максимального числа баллов БаРС
+	за данную лабораторную):
+	\begin{enumerate}
+		\item Найти готовые библиотеки, осуществляющие аналогичный
+		парсинг и конвертацию файлов.
+		\item Сравнить полученные результаты и объяснить их
+		сходство/различие.
+	\end{enumerate}
+	\item \underline{Необязательное задание для получения оценки «5»} (позволяет набрать
+	от 90 до 100 процентов от максимального числа баллов БаРС за
+	данную лабораторную):
+	\begin{enumerate}
+		\item Используя свою программу и найденные готовые
+		библиотеки, сравнить десятикратное время выполнения
+		парсинга + конвертации в цикле.
+		\item Проанализировать полученные результаты и объяснить их
+		сходство/различие.
+	\end{enumerate}
+	\item Проверить, что все пункты задания выполнены и выполнены верно.
+	\item Написать отчёт о проделанной работе.
+	\item Подготовиться к устным вопросам на защите.
+\end{enumerate}
+Согласно варианту 17 необходимо распимание на среду в формате XML конвертировать в YAML.
+\pagebreak
+\large
+\section{Исходный фаил}
+\subsection{schedule.xml}
+\inputminted{xml}{../schedule.xml}
+\pagebreak
+\section{Результат}
+\subsection{schedule.yaml}
+\inputminted{yaml}{../schedule.yaml}
+\pagebreak{}
+\section{Исходный код программы}
+\subsection{\texttt{inf\_lab4.py}}
+\inputminted{python}{../inf_lab4.py}
+\subsection{\texttt{xml\_lexer.py}}
+\inputminted{python}{../xml_lexer.py}
+\subsection{\texttt{xml\_parse.py}}
+\inputminted{python}{../xml_parser.py}
+\section{Вывод}
+\large
+В ходе этой лабораторной работы я реализовал парсинг XML файлов через абстрактое дерево и вывод дерева в YAML  формате. Так же я изучил форму  Бэкуса-Наура и особенности многочисленных языков разметки.
+    
+\end{document}

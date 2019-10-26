@@ -1,0 +1,7 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k+kn}{import} \PYG{n+nn}{xml\PYGZus{}parser}
+
+\PYG{n}{root} \PYG{o}{=} \PYG{n}{xml\PYGZus{}parser}\PYG{o}{.}\PYG{n}{parse}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}schedule.xml\PYGZsq{}}\PYG{p}{)}
+\PYG{k}{with} \PYG{n+nb}{open}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}schedule.yaml\PYGZsq{}}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}w\PYGZsq{}}\PYG{p}{)} \PYG{k}{as} \PYG{n}{f}\PYG{p}{:}
+    \PYG{n}{xml\PYGZus{}parser}\PYG{o}{.}\PYG{n}{to\PYGZus{}yaml}\PYG{p}{(}\PYG{n}{root}\PYG{p}{,} \PYG{n}{f}\PYG{p}{)}
+\end{Verbatim}

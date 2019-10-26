@@ -1,0 +1,73 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k+kn}{import} \PYG{n+nn}{re}
+\PYG{k+kn}{from} \PYG{n+nn}{typing} \PYG{k+kn}{import} \PYG{n}{List}
+
+\PYG{n}{tag\PYGZus{}re} \PYG{o}{=} \PYG{n}{re}\PYG{o}{.}\PYG{n}{compile}\PYG{p}{(}
+    \PYG{l+s+sa}{r}\PYG{l+s+sd}{\PYGZdq{}\PYGZdq{}\PYGZdq{}\PYGZca{}(?!\PYGZlt{}[xX][mM][lL])}
+\PYG{l+s+sd}{    (\PYGZlt{}\PYGZbs{}s*([a\PYGZhy{}zA\PYGZhy{}Z\PYGZus{}][\PYGZhy{}a\PYGZhy{}zA\PYGZhy{}Z\PYGZus{}.\PYGZbs{}d]*)}
+\PYG{l+s+sd}{    ((\PYGZbs{}s*[a\PYGZhy{}zA\PYGZhy{}Z\PYGZus{}][\PYGZhy{}a\PYGZhy{}zA\PYGZhy{}Z\PYGZus{}.\PYGZbs{}d]*=([\PYGZsq{}\PYGZbs{}\PYGZdq{}]).*\PYGZbs{}5)*)}
+\PYG{l+s+sd}{    \PYGZbs{}s*(/)?\PYGZgt{}|\PYGZlt{}/\PYGZbs{}s*([a\PYGZhy{}zA\PYGZhy{}Z\PYGZus{}][\PYGZhy{}a\PYGZhy{}zA\PYGZhy{}Z\PYGZus{}.\PYGZbs{}d]*)\PYGZbs{}s*\PYGZgt{})\PYGZdq{}\PYGZdq{}\PYGZdq{}}\PYG{p}{,}
+    \PYG{n}{re}\PYG{o}{.}\PYG{n}{X}\PYG{p}{)}
+
+\PYG{n}{open\PYGZus{}tag\PYGZus{}re} \PYG{o}{=} \PYG{n}{re}\PYG{o}{.}\PYG{n}{compile}\PYG{p}{(}
+    \PYG{l+s+sa}{r}\PYG{l+s+sd}{\PYGZdq{}\PYGZdq{}\PYGZdq{}\PYGZca{}(?!\PYGZlt{}[xX][mM][lL])}
+\PYG{l+s+sd}{    \PYGZlt{}\PYGZbs{}s*(?P\PYGZlt{}name\PYGZgt{}[a\PYGZhy{}zA\PYGZhy{}Z\PYGZus{}][\PYGZhy{}a\PYGZhy{}zA\PYGZhy{}Z\PYGZus{}.\PYGZbs{}d]*)}
+\PYG{l+s+sd}{    (?P\PYGZlt{}attrs\PYGZgt{}(\PYGZbs{}s*[a\PYGZhy{}zA\PYGZhy{}Z\PYGZus{}][\PYGZhy{}a\PYGZhy{}zA\PYGZhy{}Z\PYGZus{}.\PYGZbs{}d]*=([\PYGZsq{}\PYGZbs{}\PYGZdq{}]).*\PYGZbs{}4)*)\PYGZbs{}s*\PYGZgt{}\PYGZdq{}\PYGZdq{}\PYGZdq{}}\PYG{p}{,}
+    \PYG{n}{re}\PYG{o}{.}\PYG{n}{X}\PYG{p}{)}
+
+\PYG{n}{close\PYGZus{}tag\PYGZus{}re} \PYG{o}{=} \PYG{n}{re}\PYG{o}{.}\PYG{n}{compile}\PYG{p}{(}
+    \PYG{l+s+sa}{r}\PYG{l+s+sd}{\PYGZdq{}\PYGZdq{}\PYGZdq{}\PYGZca{}(?!\PYGZlt{}[xX][mM][lL])\PYGZlt{}/(?P\PYGZlt{}name\PYGZgt{}[a\PYGZhy{}zA\PYGZhy{}Z\PYGZus{}][\PYGZhy{}a\PYGZhy{}zA\PYGZhy{}Z\PYGZus{}.\PYGZbs{}d]*)\PYGZbs{}s*\PYGZgt{}\PYGZdq{}\PYGZdq{}\PYGZdq{}}\PYG{p}{,}
+    \PYG{n}{re}\PYG{o}{.}\PYG{n}{X}\PYG{p}{)}
+
+\PYG{n}{self\PYGZus{}closed\PYGZus{}tag\PYGZus{}re} \PYG{o}{=} \PYG{n}{re}\PYG{o}{.}\PYG{n}{compile}\PYG{p}{(}\PYG{l+s+sa}{r}\PYG{l+s+s2}{\PYGZdq{}\PYGZdq{}\PYGZdq{}\PYGZca{}(?!\PYGZlt{}[xX][mM][lL])}
+\PYG{l+s+s2}{\PYGZlt{}\PYGZbs{}s*(?P\PYGZlt{}name\PYGZgt{}[a\PYGZhy{}zA\PYGZhy{}Z\PYGZus{}][\PYGZhy{}a\PYGZhy{}zA\PYGZhy{}Z\PYGZus{}.\PYGZbs{}d]*)}
+\PYG{l+s+s2}{(?P\PYGZlt{}attrs\PYGZgt{}(\PYGZbs{}s*[a\PYGZhy{}zA\PYGZhy{}Z\PYGZus{}][\PYGZhy{}a\PYGZhy{}zA\PYGZhy{}Z\PYGZus{}.\PYGZbs{}d]*=([\PYGZsq{}\PYGZbs{}\PYGZdq{}]).*\PYGZbs{}4)*)\PYGZbs{}s*/\PYGZgt{}\PYGZdq{}\PYGZdq{}\PYGZdq{}}\PYG{p}{,}
+                                \PYG{n}{re}\PYG{o}{.}\PYG{n}{X}\PYG{p}{)}
+
+\PYG{n}{data\PYGZus{}re} \PYG{o}{=} \PYG{n}{re}\PYG{o}{.}\PYG{n}{compile}\PYG{p}{(}\PYG{l+s+sa}{r}\PYG{l+s+s1}{\PYGZsq{}\PYGZbs{}s*(?P\PYGZlt{}data\PYGZgt{}\PYGZbs{}S[\PYGZca{}\PYGZlt{}\PYGZgt{}]+)\PYGZsq{}}\PYG{p}{)}
+
+\PYG{n}{attribute\PYGZus{}re} \PYG{o}{=} \PYG{n}{re}\PYG{o}{.}\PYG{n}{compile}\PYG{p}{(}
+    \PYG{l+s+sa}{r}\PYG{l+s+sd}{\PYGZdq{}\PYGZdq{}\PYGZdq{}[a\PYGZhy{}zA\PYGZhy{}Z\PYGZus{}][\PYGZhy{}a\PYGZhy{}zA\PYGZhy{}Z\PYGZus{}.\PYGZbs{}d]*=([\PYGZdq{}\PYGZsq{}]).*\PYGZbs{}1\PYGZdq{}\PYGZdq{}\PYGZdq{}}\PYG{p}{)}
+
+\PYG{n}{decl\PYGZus{}re} \PYG{o}{=} \PYG{n}{re}\PYG{o}{.}\PYG{n}{compile}\PYG{p}{(}
+    \PYG{l+s+sa}{r}\PYG{l+s+sd}{\PYGZdq{}\PYGZdq{}\PYGZdq{}\PYGZlt{}\PYGZbs{}?xml\PYGZbs{}s+}
+\PYG{l+s+sd}{    version=[\PYGZsq{}\PYGZdq{}](?P\PYGZlt{}ver\PYGZgt{}\PYGZbs{}d\PYGZbs{}.\PYGZbs{}d)[\PYGZsq{}\PYGZdq{}]}
+\PYG{l+s+sd}{    (?:\PYGZbs{}s+encoding=[\PYGZsq{}\PYGZdq{}](?P\PYGZlt{}enc\PYGZgt{}[\PYGZhy{}a\PYGZhy{}zA\PYGZhy{}Z\PYGZbs{}d]+)[\PYGZsq{}\PYGZdq{}])?}
+\PYG{l+s+sd}{    (?:\PYGZbs{}s+standalone=[\PYGZsq{}\PYGZdq{}](?P\PYGZlt{}stand\PYGZgt{}yes|no)[\PYGZsq{}\PYGZdq{}])?}
+\PYG{l+s+sd}{    \PYGZbs{}s*\PYGZbs{}?\PYGZgt{}\PYGZdq{}\PYGZdq{}\PYGZdq{}}\PYG{p}{,} \PYG{n}{re}\PYG{o}{.}\PYG{n}{X}\PYG{p}{)}
+
+
+\PYG{k}{class} \PYG{n+nc}{XmlLexerError}\PYG{p}{(}\PYG{n+ne}{Exception}\PYG{p}{):}
+    \PYG{k}{pass}
+
+
+\PYG{k}{def} \PYG{n+nf}{read\PYGZus{}xml\PYGZus{}file}\PYG{p}{(}\PYG{n+nb}{file}\PYG{p}{:} \PYG{n+nb}{str}\PYG{p}{)} \PYG{o}{\PYGZhy{}\PYGZgt{}} \PYG{n+nb}{str}\PYG{p}{:}
+    \PYG{k}{with} \PYG{n+nb}{open}\PYG{p}{(}\PYG{n+nb}{file}\PYG{p}{)} \PYG{k}{as} \PYG{n}{f}\PYG{p}{:}
+        \PYG{n}{s} \PYG{o}{=} \PYG{n}{f}\PYG{o}{.}\PYG{n}{read}\PYG{p}{()}\PYG{o}{.}\PYG{n}{replace}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+se}{\PYGZbs{}n}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}\PYGZsq{}}\PYG{p}{)}\PYG{o}{.}\PYG{n}{lstrip}\PYG{p}{()}\PYG{o}{.}\PYG{n}{rstrip}\PYG{p}{()}
+    \PYG{k}{return} \PYG{n}{s}
+
+
+\PYG{k}{def} \PYG{n+nf}{get\PYGZus{}tokens}\PYG{p}{(}\PYG{n+nb}{file}\PYG{p}{:} \PYG{n+nb}{str}\PYG{p}{)} \PYG{o}{\PYGZhy{}\PYGZgt{}} \PYG{n}{List}\PYG{p}{[}\PYG{n+nb}{str}\PYG{p}{]:}
+    \PYG{n}{tokens}\PYG{p}{:} \PYG{n}{List}\PYG{p}{[}\PYG{n+nb}{str}\PYG{p}{]} \PYG{o}{=} \PYG{p}{[]}
+    \PYG{n}{s} \PYG{o}{=} \PYG{n}{read\PYGZus{}xml\PYGZus{}file}\PYG{p}{(}\PYG{n+nb}{file}\PYG{p}{)}
+    \PYG{n}{tmp\PYGZus{}p} \PYG{o}{=} \PYG{l+m+mi}{0}
+    \PYG{k}{for} \PYG{n}{p} \PYG{o+ow}{in} \PYG{n+nb}{range}\PYG{p}{(}\PYG{n+nb}{len}\PYG{p}{(}\PYG{n}{s}\PYG{p}{)):}
+        \PYG{n}{c} \PYG{o}{=} \PYG{n}{s}\PYG{p}{[}\PYG{n}{p}\PYG{p}{]}
+        \PYG{k}{if} \PYG{n}{c} \PYG{o}{==} \PYG{l+s+s1}{\PYGZsq{}\PYGZlt{}\PYGZsq{}}\PYG{p}{:}
+            \PYG{n}{pros\PYGZus{}data\PYGZus{}match} \PYG{o}{=} \PYG{n}{data\PYGZus{}re}\PYG{o}{.}\PYG{n}{match}\PYG{p}{(}\PYG{n}{s}\PYG{p}{[}\PYG{n}{tmp\PYGZus{}p}\PYG{p}{:}\PYG{n}{p}\PYG{p}{])}
+            \PYG{k}{if} \PYG{n}{pros\PYGZus{}data\PYGZus{}match} \PYG{o+ow}{and} \PYG{n}{pros\PYGZus{}data\PYGZus{}match}\PYG{o}{.}\PYG{n}{group}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}data\PYGZsq{}}\PYG{p}{):}
+                \PYG{n}{tokens}\PYG{o}{.}\PYG{n}{append}\PYG{p}{(}\PYG{n}{pros\PYGZus{}data\PYGZus{}match}\PYG{o}{.}\PYG{n}{group}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}data\PYGZsq{}}\PYG{p}{))}
+            \PYG{n}{tmp\PYGZus{}p} \PYG{o}{=} \PYG{n}{p}
+        \PYG{k}{elif} \PYG{n}{c} \PYG{o}{==} \PYG{l+s+s1}{\PYGZsq{}\PYGZgt{}\PYGZsq{}}\PYG{p}{:}
+            \PYG{n}{pros\PYGZus{}tag\PYGZus{}match} \PYG{o}{=} \PYG{n}{tag\PYGZus{}re}\PYG{o}{.}\PYG{n}{match}\PYG{p}{(}\PYG{n}{s}\PYG{p}{[}\PYG{n}{tmp\PYGZus{}p}\PYG{p}{:}\PYG{n}{p} \PYG{o}{+} \PYG{l+m+mi}{1}\PYG{p}{])}
+            \PYG{n}{pros\PYGZus{}decl\PYGZus{}match} \PYG{o}{=} \PYG{n}{decl\PYGZus{}re}\PYG{o}{.}\PYG{n}{match}\PYG{p}{(}\PYG{n}{s}\PYG{p}{[}\PYG{n}{tmp\PYGZus{}p}\PYG{p}{:}\PYG{n}{p} \PYG{o}{+} \PYG{l+m+mi}{1}\PYG{p}{])}
+            \PYG{k}{if} \PYG{n+nb}{bool}\PYG{p}{(}\PYG{n}{pros\PYGZus{}tag\PYGZus{}match}\PYG{p}{)} \PYG{o}{\PYGZca{}} \PYG{n+nb}{bool}\PYG{p}{(}\PYG{n}{pros\PYGZus{}decl\PYGZus{}match}\PYG{p}{):}
+                \PYG{n}{match} \PYG{o}{=} \PYG{n}{pros\PYGZus{}tag\PYGZus{}match} \PYG{o+ow}{or} \PYG{n}{pros\PYGZus{}decl\PYGZus{}match}
+                \PYG{n}{tokens}\PYG{o}{.}\PYG{n}{append}\PYG{p}{(}
+                    \PYG{n}{match}\PYG{o}{.}\PYG{n}{group}\PYG{p}{(}\PYG{l+m+mi}{0}\PYG{p}{))}
+            \PYG{k}{else}\PYG{p}{:}
+                \PYG{k}{raise} \PYG{n}{XmlLexerError}\PYG{p}{(}
+                    \PYG{l+s+s1}{\PYGZsq{}Invalid tag: \PYGZob{}\PYGZcb{}\PYGZsq{}}\PYG{o}{.}\PYG{n}{format}\PYG{p}{(}\PYG{n}{s}\PYG{p}{[}\PYG{n}{tmp\PYGZus{}p}\PYG{p}{:}\PYG{n}{p} \PYG{o}{+} \PYG{l+m+mi}{1}\PYG{p}{]))}
+            \PYG{n}{tmp\PYGZus{}p} \PYG{o}{=} \PYG{n}{p} \PYG{o}{+} \PYG{l+m+mi}{1}
+    \PYG{k}{return} \PYG{n}{tokens}
+\end{Verbatim}
