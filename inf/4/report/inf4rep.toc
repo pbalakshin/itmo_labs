@@ -8,4 +8,4 @@
 \contentsline {subsection}{\numberline {4.1}\texttt {inf\_lab4.py}}{6}{subsection.4.1}% 
 \contentsline {subsection}{\numberline {4.2}\texttt {xml\_lexer.py}}{6}{subsection.4.2}% 
 \contentsline {subsection}{\numberline {4.3}\texttt {xml\_parse.py}}{7}{subsection.4.3}% 
-\contentsline {section}{\numberline {5}\IeC {\CYRV }\IeC {\cyrery }\IeC {\cyrv }\IeC {\cyro }\IeC {\cyrd }}{11}{section.5}% 
+\contentsline {section}{\numberline {5}\IeC {\CYRV }\IeC {\cyrery }\IeC {\cyrv }\IeC {\cyro }\IeC {\cyrd }}{10}{section.5}% 

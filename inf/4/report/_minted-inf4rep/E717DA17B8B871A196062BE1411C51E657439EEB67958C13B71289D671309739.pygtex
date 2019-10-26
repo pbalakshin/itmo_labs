@@ -1,6 +1,7 @@
 \begin{Verbatim}[commandchars=\\\{\}]
 \PYG{k+kn}{import} \PYG{n+nn}{re}
 \PYG{k+kn}{from} \PYG{n+nn}{typing} \PYG{k+kn}{import} \PYG{n}{List}
+\PYG{k+kn}{from} \PYG{n+nn}{operator} \PYG{k+kn}{import} \PYG{n}{xor}
 
 \PYG{n}{tag\PYGZus{}re} \PYG{o}{=} \PYG{n}{re}\PYG{o}{.}\PYG{n}{compile}\PYG{p}{(}
     \PYG{l+s+sa}{r}\PYG{l+s+sd}{\PYGZdq{}\PYGZdq{}\PYGZdq{}\PYGZca{}(?!\PYGZlt{}[xX][mM][lL])}
@@ -61,7 +62,7 @@
         \PYG{k}{elif} \PYG{n}{c} \PYG{o}{==} \PYG{l+s+s1}{\PYGZsq{}\PYGZgt{}\PYGZsq{}}\PYG{p}{:}
             \PYG{n}{pros\PYGZus{}tag\PYGZus{}match} \PYG{o}{=} \PYG{n}{tag\PYGZus{}re}\PYG{o}{.}\PYG{n}{match}\PYG{p}{(}\PYG{n}{s}\PYG{p}{[}\PYG{n}{tmp\PYGZus{}p}\PYG{p}{:}\PYG{n}{p} \PYG{o}{+} \PYG{l+m+mi}{1}\PYG{p}{])}
             \PYG{n}{pros\PYGZus{}decl\PYGZus{}match} \PYG{o}{=} \PYG{n}{decl\PYGZus{}re}\PYG{o}{.}\PYG{n}{match}\PYG{p}{(}\PYG{n}{s}\PYG{p}{[}\PYG{n}{tmp\PYGZus{}p}\PYG{p}{:}\PYG{n}{p} \PYG{o}{+} \PYG{l+m+mi}{1}\PYG{p}{])}
-            \PYG{k}{if} \PYG{n+nb}{bool}\PYG{p}{(}\PYG{n}{pros\PYGZus{}tag\PYGZus{}match}\PYG{p}{)} \PYG{o}{\PYGZca{}} \PYG{n+nb}{bool}\PYG{p}{(}\PYG{n}{pros\PYGZus{}decl\PYGZus{}match}\PYG{p}{):}
+            \PYG{k}{if} \PYG{n}{xor}\PYG{p}{(}\PYG{n+nb}{bool}\PYG{p}{(}\PYG{n}{pros\PYGZus{}tag\PYGZus{}match}\PYG{p}{),} \PYG{n+nb}{bool}\PYG{p}{(}\PYG{n}{pros\PYGZus{}decl\PYGZus{}match}\PYG{p}{)):}
                 \PYG{n}{match} \PYG{o}{=} \PYG{n}{pros\PYGZus{}tag\PYGZus{}match} \PYG{o+ow}{or} \PYG{n}{pros\PYGZus{}decl\PYGZus{}match}
                 \PYG{n}{tokens}\PYG{o}{.}\PYG{n}{append}\PYG{p}{(}
                     \PYG{n}{match}\PYG{o}{.}\PYG{n}{group}\PYG{p}{(}\PYG{l+m+mi}{0}\PYG{p}{))}

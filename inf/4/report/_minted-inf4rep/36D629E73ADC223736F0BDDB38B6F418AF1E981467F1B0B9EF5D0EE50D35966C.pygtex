@@ -1,11 +1,12 @@
 \begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k+kn}{import} \PYG{n+nn}{re}
+\PYG{k+kn}{from} \PYG{n+nn}{collections} \PYG{k+kn}{import} \PYG{n}{Counter}
+\PYG{k+kn}{from} \PYG{n+nn}{typing} \PYG{k+kn}{import} \PYG{n}{List}
 \PYG{k+kn}{from} \PYG{n+nn}{typing} \PYG{k+kn}{import} \PYG{n}{NamedTuple}
 \PYG{k+kn}{from} \PYG{n+nn}{typing} \PYG{k+kn}{import} \PYG{n}{Optional}
 \PYG{k+kn}{from} \PYG{n+nn}{typing} \PYG{k+kn}{import} \PYG{n}{Union}
-\PYG{k+kn}{from} \PYG{n+nn}{typing} \PYG{k+kn}{import} \PYG{n}{List}
+
 \PYG{k+kn}{import} \PYG{n+nn}{xml\PYGZus{}lexer}
-\PYG{k+kn}{import} \PYG{n+nn}{re}
-\PYG{k+kn}{from} \PYG{n+nn}{collections} \PYG{k+kn}{import} \PYG{n}{Counter}
 
 \PYG{n}{XmlNode} \PYG{o}{=} \PYG{n}{Union}\PYG{p}{[}\PYG{l+s+s1}{\PYGZsq{}XmlSection\PYGZsq{}}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}XmlElement\PYGZsq{}}\PYG{p}{]}
 
@@ -108,15 +109,15 @@
         \PYG{n}{\PYGZus{}\PYGZus{}recur\PYGZus{}parse}\PYG{p}{(}\PYG{n}{sec}\PYG{p}{,} \PYG{n}{tokens}\PYG{p}{,} \PYG{n}{p}\PYG{p}{,} \PYG{n}{stack}\PYG{p}{)}
 
 
-\PYG{k}{def} \PYG{n+nf}{\PYGZus{}\PYGZus{}write\PYGZus{}attrs\PYGZus{}to\PYGZus{}yaml}\PYG{p}{(}\PYG{n}{f}\PYG{p}{,} \PYG{n}{attrs}\PYG{p}{:} \PYG{n+nb}{dict}\PYG{p}{,} \PYG{n}{d}\PYG{p}{:} \PYG{n+nb}{int}\PYG{p}{)} \PYG{o}{\PYGZhy{}\PYGZgt{}} \PYG{n+nb+bp}{None}\PYG{p}{:}
-    \PYG{n}{f}\PYG{o}{.}\PYG{n}{write}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}  \PYGZsq{}} \PYG{o}{*} \PYG{n}{d} \PYG{o}{+} \PYG{l+s+s1}{\PYGZsq{}attributes:}\PYG{l+s+se}{\PYGZbs{}n}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{)}
+\PYG{k}{def} \PYG{n+nf}{\PYGZus{}\PYGZus{}write\PYGZus{}attrs\PYGZus{}to\PYGZus{}yaml}\PYG{p}{(}\PYG{n}{f}\PYG{p}{,} \PYG{n}{attrs}\PYG{p}{:} \PYG{n+nb}{dict}\PYG{p}{,} \PYG{n}{d}\PYG{p}{:} \PYG{n+nb}{int}\PYG{p}{,} \PYG{n}{indent}\PYG{o}{=}\PYG{l+s+s1}{\PYGZsq{}  \PYGZsq{}}\PYG{p}{)} \PYG{o}{\PYGZhy{}\PYGZgt{}} \PYG{n+nb+bp}{None}\PYG{p}{:}
+    \PYG{n}{f}\PYG{o}{.}\PYG{n}{write}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}\PYGZob{}\PYGZcb{}\PYGZob{}\PYGZcb{}:}\PYG{l+s+se}{\PYGZbs{}n}\PYG{l+s+s1}{\PYGZsq{}}\PYG{o}{.}\PYG{n}{format}\PYG{p}{(}\PYG{n}{indent} \PYG{o}{*} \PYG{n}{d}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}attributes\PYGZsq{}}\PYG{p}{))}
     \PYG{n}{d} \PYG{o}{+=} \PYG{l+m+mi}{1}
     \PYG{k}{for} \PYG{n}{name} \PYG{o+ow}{in} \PYG{n}{attrs}\PYG{p}{:}
-        \PYG{n}{f}\PYG{o}{.}\PYG{n}{write}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}\PYGZob{}\PYGZcb{}\PYGZob{}\PYGZcb{}: \PYGZob{}\PYGZcb{}}\PYG{l+s+se}{\PYGZbs{}n}\PYG{l+s+s1}{\PYGZsq{}}\PYG{o}{.}\PYG{n}{format}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}  \PYGZsq{}} \PYG{o}{*} \PYG{n}{d}\PYG{p}{,} \PYG{n}{name}\PYG{p}{,}
+        \PYG{n}{f}\PYG{o}{.}\PYG{n}{write}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}\PYGZob{}\PYGZcb{}\PYGZob{}\PYGZcb{}: \PYGZob{}\PYGZcb{}}\PYG{l+s+se}{\PYGZbs{}n}\PYG{l+s+s1}{\PYGZsq{}}\PYG{o}{.}\PYG{n}{format}\PYG{p}{(}\PYG{n}{indent} \PYG{o}{*} \PYG{n}{d}\PYG{p}{,} \PYG{n}{name}\PYG{p}{,}
                                     \PYG{n}{attrs}\PYG{p}{[}\PYG{n}{name}\PYG{p}{]))}
 
 
-\PYG{k}{def} \PYG{n+nf}{to\PYGZus{}yaml}\PYG{p}{(}\PYG{n}{el}\PYG{p}{:} \PYG{n}{XmlSection}\PYG{p}{,} \PYG{n}{f}\PYG{p}{,} \PYG{n}{d}\PYG{o}{=}\PYG{l+m+mi}{0}\PYG{p}{):}
+\PYG{k}{def} \PYG{n+nf}{to\PYGZus{}yaml}\PYG{p}{(}\PYG{n}{el}\PYG{p}{:} \PYG{n}{XmlSection}\PYG{p}{,} \PYG{n}{f}\PYG{p}{,} \PYG{n}{d}\PYG{o}{=}\PYG{l+m+mi}{0}\PYG{p}{,} \PYG{n}{indent}\PYG{o}{=}\PYG{l+s+s1}{\PYGZsq{}  \PYGZsq{}}\PYG{p}{):}
     \PYG{n}{ex\PYGZus{}name} \PYG{o}{=} \PYG{n}{Counter}\PYG{p}{()}
     \PYG{k}{for} \PYG{n}{i} \PYG{o+ow}{in} \PYG{n}{el}\PYG{o}{.}\PYG{n}{inc}\PYG{p}{:}
         \PYG{n}{name} \PYG{o}{=} \PYG{n}{i}\PYG{o}{.}\PYG{n}{name}
@@ -125,16 +126,16 @@
             \PYG{n}{name} \PYG{o}{+=} \PYG{n+nb}{str}\PYG{p}{(}\PYG{n}{ex\PYGZus{}name}\PYG{p}{[}\PYG{n}{i}\PYG{o}{.}\PYG{n}{name}\PYG{p}{]} \PYG{o}{\PYGZhy{}} \PYG{l+m+mi}{1}\PYG{p}{)}
 
         \PYG{k}{if} \PYG{n+nb}{isinstance}\PYG{p}{(}\PYG{n}{i}\PYG{p}{,} \PYG{n}{XmlElement}\PYG{p}{):}
-            \PYG{n}{f}\PYG{o}{.}\PYG{n}{write}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}\PYGZob{}\PYGZcb{}\PYGZob{}\PYGZcb{}:\PYGZsq{}}\PYG{o}{.}\PYG{n}{format}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}  \PYGZsq{}} \PYG{o}{*} \PYG{n}{d}\PYG{p}{,} \PYG{n}{name}\PYG{p}{))}
+            \PYG{n}{f}\PYG{o}{.}\PYG{n}{write}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}\PYGZob{}\PYGZcb{}\PYGZob{}\PYGZcb{}:\PYGZsq{}}\PYG{o}{.}\PYG{n}{format}\PYG{p}{(}\PYG{n}{indent} \PYG{o}{*} \PYG{n}{d}\PYG{p}{,} \PYG{n}{name}\PYG{p}{))}
             \PYG{k}{if} \PYG{n+nb}{len}\PYG{p}{(}\PYG{n}{i}\PYG{o}{.}\PYG{n}{attributes}\PYG{p}{)} \PYG{o}{!=} \PYG{l+m+mi}{0}\PYG{p}{:}
                 \PYG{n}{f}\PYG{o}{.}\PYG{n}{write}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+se}{\PYGZbs{}n}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{)}
                 \PYG{n}{d} \PYG{o}{+=} \PYG{l+m+mi}{1}
                 \PYG{n}{\PYGZus{}\PYGZus{}write\PYGZus{}attrs\PYGZus{}to\PYGZus{}yaml}\PYG{p}{(}\PYG{n}{f}\PYG{p}{,} \PYG{n}{i}\PYG{o}{.}\PYG{n}{attributes}\PYG{p}{,} \PYG{n}{d}\PYG{p}{)}
-                \PYG{n}{f}\PYG{o}{.}\PYG{n}{write}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}\PYGZob{}\PYGZcb{}value: \PYGZob{}\PYGZcb{}}\PYG{l+s+se}{\PYGZbs{}n}\PYG{l+s+s1}{\PYGZsq{}}\PYG{o}{.}\PYG{n}{format}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}  \PYGZsq{}}\PYG{o}{*}\PYG{n}{d}\PYG{p}{,} \PYG{n}{i}\PYG{o}{.}\PYG{n}{value}\PYG{p}{))}
+                \PYG{n}{f}\PYG{o}{.}\PYG{n}{write}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}\PYGZob{}\PYGZcb{}value: \PYGZob{}\PYGZcb{}}\PYG{l+s+se}{\PYGZbs{}n}\PYG{l+s+s1}{\PYGZsq{}}\PYG{o}{.}\PYG{n}{format}\PYG{p}{(}\PYG{n}{indent} \PYG{o}{*} \PYG{n}{d}\PYG{p}{,} \PYG{n}{i}\PYG{o}{.}\PYG{n}{value}\PYG{p}{))}
             \PYG{k}{else}\PYG{p}{:}
                 \PYG{n}{f}\PYG{o}{.}\PYG{n}{write}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{} \PYGZob{}\PYGZcb{}}\PYG{l+s+se}{\PYGZbs{}n}\PYG{l+s+s1}{\PYGZsq{}}\PYG{o}{.}\PYG{n}{format}\PYG{p}{(}\PYG{n}{i}\PYG{o}{.}\PYG{n}{value}\PYG{p}{))}
         \PYG{k}{elif} \PYG{n+nb}{isinstance}\PYG{p}{(}\PYG{n}{i}\PYG{p}{,} \PYG{n}{XmlSection}\PYG{p}{):}
-            \PYG{n}{f}\PYG{o}{.}\PYG{n}{write}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}\PYGZob{}\PYGZcb{}\PYGZob{}\PYGZcb{}:}\PYG{l+s+se}{\PYGZbs{}n}\PYG{l+s+s1}{\PYGZsq{}}\PYG{o}{.}\PYG{n}{format}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}  \PYGZsq{}} \PYG{o}{*} \PYG{n}{d}\PYG{p}{,} \PYG{n}{name}\PYG{p}{))}
+            \PYG{n}{f}\PYG{o}{.}\PYG{n}{write}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}\PYGZob{}\PYGZcb{}\PYGZob{}\PYGZcb{}:}\PYG{l+s+se}{\PYGZbs{}n}\PYG{l+s+s1}{\PYGZsq{}}\PYG{o}{.}\PYG{n}{format}\PYG{p}{(}\PYG{n}{indent} \PYG{o}{*} \PYG{n}{d}\PYG{p}{,} \PYG{n}{name}\PYG{p}{))}
             \PYG{n}{d} \PYG{o}{+=} \PYG{l+m+mi}{1}
             \PYG{k}{if} \PYG{n+nb}{len}\PYG{p}{(}\PYG{n}{i}\PYG{o}{.}\PYG{n}{attributes}\PYG{p}{)} \PYG{o}{!=} \PYG{l+m+mi}{0}\PYG{p}{:}
                 \PYG{n}{\PYGZus{}\PYGZus{}write\PYGZus{}attrs\PYGZus{}to\PYGZus{}yaml}\PYG{p}{(}\PYG{n}{f}\PYG{p}{,} \PYG{n}{i}\PYG{o}{.}\PYG{n}{attributes}\PYG{p}{,} \PYG{n}{d}\PYG{p}{)}
@@ -164,11 +165,6 @@
     \PYG{n}{root\PYGZus{}attrs} \PYG{o}{=} \PYG{n}{get\PYGZus{}tag\PYGZus{}attributes}\PYG{p}{(}\PYG{n}{root\PYGZus{}tag\PYGZus{}match}\PYG{p}{)}
     \PYG{n}{root} \PYG{o}{=} \PYG{n}{XmlSection}\PYG{p}{(}\PYG{n}{root\PYGZus{}tag\PYGZus{}match}\PYG{o}{.}\PYG{n}{group}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}name\PYGZsq{}}\PYG{p}{),}
                       \PYG{n}{root\PYGZus{}attrs}\PYG{p}{,} \PYG{n+nb+bp}{None}\PYG{p}{,} \PYG{p}{[])}
-    \PYG{n}{\PYGZus{}\PYGZus{}recur\PYGZus{}parse}\PYG{p}{(}\PYG{n}{root}\PYG{p}{,} \PYG{n}{tokens}\PYG{p}{,} \PYG{n}{start}\PYG{o}{+}\PYG{l+m+mi}{1}\PYG{p}{,} \PYG{p}{[}\PYG{n}{root\PYGZus{}tag\PYGZus{}match}\PYG{o}{.}\PYG{n}{group}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}name\PYGZsq{}}\PYG{p}{)])}
+    \PYG{n}{\PYGZus{}\PYGZus{}recur\PYGZus{}parse}\PYG{p}{(}\PYG{n}{root}\PYG{p}{,} \PYG{n}{tokens}\PYG{p}{,} \PYG{n}{start} \PYG{o}{+} \PYG{l+m+mi}{1}\PYG{p}{,} \PYG{p}{[}\PYG{n}{root\PYGZus{}tag\PYGZus{}match}\PYG{o}{.}\PYG{n}{group}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}name\PYGZsq{}}\PYG{p}{)])}
     \PYG{k}{return} \PYG{n}{root}
-
-
-\PYG{n}{root} \PYG{o}{=} \PYG{n}{parse}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}schedule.xml\PYGZsq{}}\PYG{p}{)}
-\PYG{k}{with} \PYG{n+nb}{open}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}schedule.yaml\PYGZsq{}}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}w\PYGZsq{}}\PYG{p}{)} \PYG{k}{as} \PYG{n}{f}\PYG{p}{:}
-    \PYG{n}{to\PYGZus{}yaml}\PYG{p}{(}\PYG{n}{root}\PYG{p}{,} \PYG{n}{f}\PYG{p}{)}
 \end{Verbatim}
