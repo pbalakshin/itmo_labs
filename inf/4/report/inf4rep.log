@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Arch Linux) (preloaded format=pdflatex 2019.9.26)  26 OCT 2019 16:27
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Arch Linux) (preloaded format=pdflatex 2019.9.26)  26 OCT 2019 23:14
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -724,6 +724,19 @@ File: babel.def 2019/04/03 3.29 Babel common definitions
 Package babel Info: Making " an active character on input line 120.
 Package babel Info: Default for \cyrdash is provided on input line 157.
 ))
+(/usr/share/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
+Package: fancyhdr 2019/01/31 v3.10 Extensive control of page headers and footer
+s
+\f@nch@headwidth=\skip54
+\f@nch@O@elh=\skip55
+\f@nch@O@erh=\skip56
+\f@nch@O@olh=\skip57
+\f@nch@O@orh=\skip58
+\f@nch@O@elf=\skip59
+\f@nch@O@erf=\skip60
+\f@nch@O@olf=\skip61
+\f@nch@O@orf=\skip62
+)
 (/usr/share/texmf-dist/tex/latex/xcolor/xcolor.sty
 Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
 
@@ -787,7 +800,7 @@ LaTeX Info: Redefining \\ on input line 3056.
 \c@FV@TrueTabGroupLevel=\count134
 \c@FV@TrueTabCounter=\count135
 \FV@TabBox@Group=\box40
-\FV@TmpLength=\skip54
+\FV@TmpLength=\skip63
 \c@FV@HighlightLinesStart=\count136
 \c@FV@HighlightLinesStop=\count137
 \FV@LoopCount=\count138
@@ -813,12 +826,12 @@ Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
 \calc@Bcount=\count146
 \calc@Adimen=\dimen144
 \calc@Bdimen=\dimen145
-\calc@Askip=\skip55
-\calc@Bskip=\skip56
+\calc@Askip=\skip64
+\calc@Bskip=\skip65
 LaTeX Info: Redefining \setlength on input line 80.
 LaTeX Info: Redefining \addtolength on input line 81.
 \calc@Ccount=\count147
-\calc@Cskip=\skip57
+\calc@Cskip=\skip66
 )
 (/usr/share/texmf-dist/tex/latex/tools/shellesc.sty
 Package: shellesc 2016/06/07 v0.02a unified shell escape interface for LaTeX
@@ -845,7 +858,7 @@ Package: xstring 2019/02/06 v1.83 String manipulations (CT)
 )
 (/usr/share/texmf-dist/tex/latex/framed/framed.sty
 Package: framed 2011/10/22 v 0.96: framed or shaded text with page breaks
-\OuterFrameSep=\skip58
+\OuterFrameSep=\skip67
 \fb@frw=\dimen146
 \fb@frh=\dimen147
 \FrameRule=\dimen148
@@ -897,23 +910,23 @@ Package: listings 2019/02/27 1.8b (Carsten Heinz)
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\CYRA' on input line 69.
+(hyperref)                removing `\CYRA' on input line 70.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\CYRV' on input line 69.
+(hyperref)                removing `\CYRV' on input line 70.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\CYRT' on input line 69.
+(hyperref)                removing `\CYRT' on input line 70.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\CYRO' on input line 69.
+(hyperref)                removing `\CYRO' on input line 70.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\CYRR' on input line 69.
+(hyperref)                removing `\CYRR' on input line 70.
 
 runsystem(which pygmentize && touch inf4rep.aex)...executed.
 
@@ -922,28 +935,28 @@ runsystem(rm inf4rep.aex)...executed.
 (./inf4rep.aux)
 \openout1 = `inf4rep.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 70.
-LaTeX Font Info:    ... okay on input line 70.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 70.
-LaTeX Font Info:    ... okay on input line 70.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 70.
-LaTeX Font Info:    ... okay on input line 70.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 70.
-LaTeX Font Info:    ... okay on input line 70.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 70.
-LaTeX Font Info:    ... okay on input line 70.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 70.
-LaTeX Font Info:    ... okay on input line 70.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 70.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 70.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 71.
+LaTeX Font Info:    ... okay on input line 71.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 71.
+LaTeX Font Info:    ... okay on input line 71.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 71.
+LaTeX Font Info:    ... okay on input line 71.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 71.
+LaTeX Font Info:    ... okay on input line 71.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 71.
+LaTeX Font Info:    ... okay on input line 71.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 71.
+LaTeX Font Info:    ... okay on input line 71.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 71.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 71.
  (/usr/share/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 70.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 70.
-LaTeX Font Info:    ... okay on input line 70.
-LaTeX Font Info:    Checking defaults for T2A/cmr/m/n on input line 70.
-LaTeX Font Info:    ... okay on input line 70.
+LaTeX Font Info:    ... okay on input line 71.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 71.
+LaTeX Font Info:    ... okay on input line 71.
+LaTeX Font Info:    Checking defaults for T2A/cmr/m/n on input line 71.
+LaTeX Font Info:    ... okay on input line 71.
 
 (/usr/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -976,7 +989,7 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 \AtBeginShipoutBox=\box50
-Package hyperref Info: Link coloring OFF on input line 70.
+Package hyperref Info: Link coloring OFF on input line 71.
 
 (/usr/share/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
@@ -986,9 +999,9 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count168
 )
-LaTeX Info: Redefining \ref on input line 70.
-LaTeX Info: Redefining \pageref on input line 70.
-LaTeX Info: Redefining \nameref on input line 70.
+LaTeX Info: Redefining \ref on input line 71.
+LaTeX Info: Redefining \pageref on input line 71.
+LaTeX Info: Redefining \nameref on input line 71.
  (./inf4rep.out) (./inf4rep.out)
 \@outlinefile=\write5
 \openout5 = `inf4rep.out'.
@@ -1033,7 +1046,7 @@ LaTeX Info: Redefining \nameref on input line 70.
 <../../../itmo-logo.png, id=45, 484.81125pt x 353.32pt>
 File: ../../../itmo-logo.png Graphic file (type png)
 <use ../../../itmo-logo.png>
-Package pdftex.def Info: ../../../itmo-logo.png  used on input line 77.
+Package pdftex.def Info: ../../../itmo-logo.png  used on input line 79.
 (pdftex.def)             Requested size: 120.45044pt x 87.77988pt.
  [1
 
@@ -1059,91 +1072,91 @@ File: t2acmtt.fd 2001/08/11 v1.0a Computer Modern Cyrillic font definitions
  [2]
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\CYRZ' on input line 109.
+(hyperref)                removing `\CYRZ' on input line 111.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyra' on input line 109.
+(hyperref)                removing `\cyra' on input line 111.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrd' on input line 109.
+(hyperref)                removing `\cyrd' on input line 111.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyra' on input line 109.
+(hyperref)                removing `\cyra' on input line 111.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrn' on input line 109.
+(hyperref)                removing `\cyrn' on input line 111.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyri' on input line 109.
+(hyperref)                removing `\cyri' on input line 111.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyre' on input line 109.
+(hyperref)                removing `\cyre' on input line 111.
 
 
-Overfull \hbox (2.2897pt too wide) in paragraph at lines 112--114
+Overfull \hbox (2.2897pt too wide) in paragraph at lines 114--116
 []\T2A/cmr/m/n/12 Изучить осо-бен-но-сти язы-ков раз-мет-ки/-фор-ма-тов JSON, Y
 AML, XML, PROTOBUF 
  []
 
 
-Overfull \hbox (2.98628pt too wide) in paragraph at lines 123--126
+Overfull \hbox (2.98628pt too wide) in paragraph at lines 125--128
 []$[]$ \T2A/cmr/m/n/12 (поз-во-ля-ет на-брать от 75
  []
 
 [3]
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\CYRI' on input line 149.
+(hyperref)                removing `\CYRI' on input line 151.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrs' on input line 149.
+(hyperref)                removing `\cyrs' on input line 151.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrh' on input line 149.
+(hyperref)                removing `\cyrh' on input line 151.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyro' on input line 149.
+(hyperref)                removing `\cyro' on input line 151.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrd' on input line 149.
+(hyperref)                removing `\cyrd' on input line 151.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrn' on input line 149.
+(hyperref)                removing `\cyrn' on input line 151.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrery' on input line 149.
+(hyperref)                removing `\cyrery' on input line 151.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrishrt' on input line 149.
+(hyperref)                removing `\cyrishrt' on input line 151.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrf' on input line 149.
+(hyperref)                removing `\cyrf' on input line 151.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyra' on input line 149.
+(hyperref)                removing `\cyra' on input line 151.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyri' on input line 149.
+(hyperref)                removing `\cyri' on input line 151.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrl' on input line 149.
+(hyperref)                removing `\cyrl' on input line 151.
 
 (./_minted-inf4rep/default-pyg-prefix.pygstyle)
 (./_minted-inf4rep/default.pygstyle)
@@ -1154,122 +1167,122 @@ LaTeX Font Info:    Font shape `T2A/cmtt/bx/n' in size <12> not available
 ) [4]
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\CYRR' on input line 153.
+(hyperref)                removing `\CYRR' on input line 155.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyre' on input line 153.
+(hyperref)                removing `\cyre' on input line 155.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrz' on input line 153.
+(hyperref)                removing `\cyrz' on input line 155.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyru' on input line 153.
+(hyperref)                removing `\cyru' on input line 155.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrl' on input line 153.
+(hyperref)                removing `\cyrl' on input line 155.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrsftsn' on input line 153.
+(hyperref)                removing `\cyrsftsn' on input line 155.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrt' on input line 153.
+(hyperref)                removing `\cyrt' on input line 155.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyra' on input line 153.
+(hyperref)                removing `\cyra' on input line 155.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrt' on input line 153.
+(hyperref)                removing `\cyrt' on input line 155.
 
 
 (./_minted-inf4rep/BFE1B6ABDC68712CE56B73D83F54BC7005199BE5C4793FD6B323772B4E1C
 7504.pygtex) [5]
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\CYRI' on input line 157.
+(hyperref)                removing `\CYRI' on input line 159.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrs' on input line 157.
+(hyperref)                removing `\cyrs' on input line 159.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrh' on input line 157.
+(hyperref)                removing `\cyrh' on input line 159.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyro' on input line 157.
+(hyperref)                removing `\cyro' on input line 159.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrd' on input line 157.
+(hyperref)                removing `\cyrd' on input line 159.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrn' on input line 157.
+(hyperref)                removing `\cyrn' on input line 159.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrery' on input line 157.
+(hyperref)                removing `\cyrery' on input line 159.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrishrt' on input line 157.
+(hyperref)                removing `\cyrishrt' on input line 159.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrk' on input line 157.
+(hyperref)                removing `\cyrk' on input line 159.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyro' on input line 157.
+(hyperref)                removing `\cyro' on input line 159.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrd' on input line 157.
+(hyperref)                removing `\cyrd' on input line 159.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrp' on input line 157.
+(hyperref)                removing `\cyrp' on input line 159.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrr' on input line 157.
+(hyperref)                removing `\cyrr' on input line 159.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyro' on input line 157.
+(hyperref)                removing `\cyro' on input line 159.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrg' on input line 157.
+(hyperref)                removing `\cyrg' on input line 159.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrr' on input line 157.
+(hyperref)                removing `\cyrr' on input line 159.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyra' on input line 157.
+(hyperref)                removing `\cyra' on input line 159.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrm' on input line 157.
+(hyperref)                removing `\cyrm' on input line 159.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrm' on input line 157.
+(hyperref)                removing `\cyrm' on input line 159.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrery' on input line 157.
+(hyperref)                removing `\cyrery' on input line 159.
 
 
 (./_minted-inf4rep/44B67FE5FE2634CFD7B76AB203D774B80B688609D3A94FF05C6F28909B97
@@ -1284,43 +1297,43 @@ File: ts1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 966C.pygtex [7] [8] [9])
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\CYRV' on input line 164.
+(hyperref)                removing `\CYRV' on input line 166.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrery' on input line 164.
+(hyperref)                removing `\cyrery' on input line 166.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrv' on input line 164.
+(hyperref)                removing `\cyrv' on input line 166.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyro' on input line 164.
+(hyperref)                removing `\cyro' on input line 166.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\cyrd' on input line 164.
+(hyperref)                removing `\cyrd' on input line 166.
 
 [10]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 168.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 170.
  [11]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 168.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 170.
  (./inf4rep.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 168.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 168.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 170.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 170.
 Package rerunfilecheck Info: File `inf4rep.out' has not changed.
 (rerunfilecheck)             Checksum: 43830EA0400A55400D2466D8555D9670;496.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 168.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 170.
  ) 
 Here is how much of TeX's memory you used:
- 13573 strings out of 492623
- 208457 string characters out of 6135669
- 362477 words of memory out of 5000000
- 17141 multiletter control sequences out of 15000+600000
+ 13703 strings out of 492623
+ 209953 string characters out of 6135669
+ 364667 words of memory out of 5000000
+ 17267 multiletter control sequences out of 15000+600000
  19724 words of font info for 50 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 36i,5n,35p,956b,566s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 36i,5n,43p,956b,568s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}{/usr/share/
 texmf-dist/fonts/enc/dvips/cm-super/cm-super-t2a.enc}</usr/share/texmf-dist/fon
 ts/type1/public/cm-super/sfbi1200.pfb></usr/share/texmf-dist/fonts/type1/public
@@ -1331,7 +1344,7 @@ hare/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/share/texmf-dist
 blic/cm-super/sfit1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/s
 frm1095.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></u
 sr/share/texmf-dist/fonts/type1/public/cm-super/sftt1200.pfb>
-Output written on inf4rep.pdf (11 pages, 245626 bytes).
+Output written on inf4rep.pdf (11 pages, 245605 bytes).
 PDF statistics:
  186 PDF objects out of 1000 (max. 8388607)
  153 compressed objects within 2 object streams
