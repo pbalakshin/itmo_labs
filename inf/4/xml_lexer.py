@@ -1,5 +1,6 @@
 import re
 from typing import List
+from operator import xor
 
 tag_re = re.compile(
     r"""^(?!<[xX][mM][lL])
@@ -60,7 +61,7 @@ def get_tokens(file: str) -> List[str]:
         elif c == '>':
             pros_tag_match = tag_re.match(s[tmp_p:p + 1])
             pros_decl_match = decl_re.match(s[tmp_p:p + 1])
-            if bool(pros_tag_match) ^ bool(pros_decl_match):
+            if xor(bool(pros_tag_match), bool(pros_decl_match)):
                 match = pros_tag_match or pros_decl_match
                 tokens.append(
                     match.group(0))

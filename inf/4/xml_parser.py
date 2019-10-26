@@ -1,10 +1,11 @@
+import re
+from collections import Counter
+from typing import List
 from typing import NamedTuple
 from typing import Optional
 from typing import Union
-from typing import List
+
 import xml_lexer
-import re
-from collections import Counter
 
 XmlNode = Union['XmlSection', 'XmlElement']
 
@@ -107,15 +108,15 @@ def __recur_parse(sec: XmlSection, tokens: List[str],
         __recur_parse(sec, tokens, p, stack)
 
 
-def __write_attrs_to_yaml(f, attrs: dict, d: int) -> None:
-    f.write('  ' * d + 'attributes:\n')
+def __write_attrs_to_yaml(f, attrs: dict, d: int, indent='  ') -> None:
+    f.write('{}{}:\n'.format(indent * d, 'attributes'))
     d += 1
     for name in attrs:
-        f.write('{}{}: {}\n'.format('  ' * d, name,
+        f.write('{}{}: {}\n'.format(indent * d, name,
                                     attrs[name]))
 
 
-def to_yaml(el: XmlSection, f, d=0):
+def to_yaml(el: XmlSection, f, d=0, indent='  '):
     ex_name = Counter()
     for i in el.inc:
         name = i.name
@@ -124,16 +125,16 @@ def to_yaml(el: XmlSection, f, d=0):
             name += str(ex_name[i.name] - 1)
 
         if isinstance(i, XmlElement):
-            f.write('{}{}:'.format('  ' * d, name))
+            f.write('{}{}:'.format(indent * d, name))
             if len(i.attributes) != 0:
                 f.write('\n')
                 d += 1
                 __write_attrs_to_yaml(f, i.attributes, d)
-                f.write('{}value: {}\n'.format('  '*d, i.value))
+                f.write('{}value: {}\n'.format(indent * d, i.value))
             else:
                 f.write(' {}\n'.format(i.value))
         elif isinstance(i, XmlSection):
-            f.write('{}{}:\n'.format('  ' * d, name))
+            f.write('{}{}:\n'.format(indent * d, name))
             d += 1
             if len(i.attributes) != 0:
                 __write_attrs_to_yaml(f, i.attributes, d)
@@ -163,10 +164,5 @@ def parse(file: str) -> Optional[XmlSection]:
     root_attrs = get_tag_attributes(root_tag_match)
     root = XmlSection(root_tag_match.group('name'),
                       root_attrs, None, [])
-    __recur_parse(root, tokens, start+1, [root_tag_match.group('name')])
+    __recur_parse(root, tokens, start + 1, [root_tag_match.group('name')])
     return root
-
-
-root = parse('schedule.xml')
-with open('schedule.yaml', 'w') as f:
-    to_yaml(root, f)
