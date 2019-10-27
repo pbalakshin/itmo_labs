@@ -1,0 +1,30 @@
+schedule:
+  day:
+  - '@num': wed
+  - event:
+      '@type': lec
+      start: '10:00'
+      stop: '11:30'
+      class: '2219'
+      subject: math
+      level: base
+      building: lomo
+      teacher: Холодова Светлана Евгеньевна
+  - event:
+      '@type': prac
+      start: '11:40'
+      stop: '13:10'
+      class: ''
+      subject: foreign languages
+      level: ''
+      building: lomo
+      teacher: ''
+  - event:
+      '@type': prac
+      start: '15:20'
+      stop: '16:50'
+      class: '1122'
+      subject: math
+      level: base
+      building: lomo
+      teacher: Попов Антон Игоревич

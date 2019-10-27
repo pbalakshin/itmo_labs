@@ -41,15 +41,14 @@ class XmlLexerError(Exception):
     pass
 
 
-def read_xml_file(file: str) -> str:
-    with open(file) as f:
-        s = f.read().replace('\n', '').lstrip().rstrip()
+def read_xml_file(f) -> str:
+    s = f.read().replace('\n', '').lstrip().rstrip()
     return s
 
 
-def get_tokens(file: str) -> List[str]:
+def get_tokens(f) -> List[str]:
     tokens: List[str] = []
-    s = read_xml_file(file)
+    s = read_xml_file(f)
     tmp_p = 0
     for p in range(len(s)):
         c = s[p]

@@ -1,0 +1,14 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k+kn}{import} \PYG{n+nn}{xml\PYGZus{}parser}
+
+
+\PYG{k}{def} \PYG{n+nf}{test}\PYG{p}{(}\PYG{n}{inf}\PYG{p}{,} \PYG{n}{outf}\PYG{p}{):}
+    \PYG{n}{root} \PYG{o}{=} \PYG{n}{xml\PYGZus{}parser}\PYG{o}{.}\PYG{n}{parse}\PYG{p}{(}\PYG{n}{inf}\PYG{p}{)}
+    \PYG{n}{xml\PYGZus{}parser}\PYG{o}{.}\PYG{n}{to\PYGZus{}yaml}\PYG{p}{(}\PYG{n}{root}\PYG{p}{,} \PYG{n}{outf}\PYG{p}{)}
+
+
+\PYG{k}{if} \PYG{n+nv+vm}{\PYGZus{}\PYGZus{}name\PYGZus{}\PYGZus{}} \PYG{o}{==} \PYG{l+s+s2}{\PYGZdq{}\PYGZus{}\PYGZus{}main\PYGZus{}\PYGZus{}\PYGZdq{}}\PYG{p}{:}
+    \PYG{k}{with} \PYG{n+nb}{open}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}schedule.xml\PYGZsq{}}\PYG{p}{)} \PYG{k}{as} \PYG{n}{inf}\PYG{p}{,} \PYGZbs{}
+         \PYG{n+nb}{open}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}schedule.yaml\PYGZdq{}}\PYG{p}{,} \PYG{l+s+s2}{\PYGZdq{}w\PYGZdq{}}\PYG{p}{)} \PYG{k}{as} \PYG{n}{outf}\PYG{p}{:}
+        \PYG{n}{test}\PYG{p}{(}\PYG{n}{inf}\PYG{p}{,} \PYG{n}{outf}\PYG{p}{)}
+\end{Verbatim}

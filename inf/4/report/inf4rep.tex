@@ -163,8 +163,43 @@
 \inputminted{python}{../xml_lexer.py}
 \subsection{\texttt{xml\_parse.py}}
 \inputminted{python}{../xml_parser.py}
+\section{Необязательно задание 1}
+Для примера я приведу сравнения результата работы моей программы с библиотекой \texttt{xmlplain}, которая осуществляет парсинг и конвертацию XML файла в YAML, а также с совместной работой библотек \texttt{xmltodict}, которая осуществляет парсинг XML файла, и библиотеки \texttt{PyYAML}, c помощью которой результат можно сохранить в формате YAML.
+\subsection{\texttt{xmlplain}}
+Код, использующийся с сравнения с библиотекой \texttt{xmlplain}:
+\subsubsection{\texttt{xmlplain\_test.py}}
+\inputminted{python}{../xmlplain_test.py}
+Результат:
+\subsubsection{\texttt{schedule\_xmlplain.yaml}}
+\inputminted{yaml}{../schedule_xmlplain.yaml}
+\subsubsection{Вывод}
+Результирующий файл, созданный библиотекой \texttt{xmlplain} схож с результатом моей программы, но испульзуется другой формат записи в YAML аттрибутов XML элементов:\\\\
+Формат моей программы:
+\inputminted{yaml}{../my_attrs_format.yaml}
+~\\
+Формат библиотеки \texttt{xmlplain}:
+\inputminted{yaml}{../xmlplain_attrs_format.yaml}
+\subsection{\texttt{xmltodict} и \texttt{PyYAML}}
+Код, использующийся с сравнения с результатом работы библиотек \texttt{xmltodict} и \texttt{PyYAML}:
+\subsubsection{ \texttt{xmltodict\_test.py}}
+\inputminted{python}{../xmltodict_test.py}
+~\\Результат:
+\inputminted{yaml}{../schedule_xmltodict.yaml}
+\subsubsection{Вывод}
+Результат работы библиотек \texttt{xmltodict} и \texttt{PyYAML} совпадает с результатом \texttt{xmlplain}, за исключеним того, что \texttt{xmlplain} не распологает пункты в алфавитном порядке.
+\subsection{Вывод}
+Библиотека \texttt{xmlplain} и библиотеки \texttt{xmltodict} и \texttt{PyYAML} в результате своей работы дают схожий с моим результат,
+но другим потём решают проблемы отсутвия аттрибутов у разделов в YAML.
+\section{Необязательное задание 2}
+Для сравнения 10-ти кратной времени работы моей программы и сторонних библиотек использовался следующий код:
+\subsubsection{ \texttt{test\_libs.py}}
+\inputminted{python}{../test_libs.py}
+\subsubsection{ Результаты}
+\texttt{xmlplain}:  0.0249 с\\
+\texttt{xmltodict}:  0.0179 с\\
+\texttt{my own lib}:  0.0040 с\\\\
+При анализе кода библиотеки \texttt{xmlplain} я понял, что классы, в которые парсится XML, в ней создаются каждый раз при парсинге, это занимает лишнее время.Так же \texttt{xmlplain} и \texttt{xmltodict} - событийные парсеры (SAX), они способны обрабатывать большие XML файлы потребляя мало памяти, но на их разработку требуютеся больше усилий и парсинг занимает больше времени, что отражается на результатах. Мой парсер близок к модели DOM, непригодной для парсинга больших файлов (из-за необходимости выделения памяти для всего дерева элементов) и работающий быстрее.
 \section{Вывод}
 \large
-В ходе этой лабораторной работы я реализовал парсинг XML файлов через абстрактое дерево и вывод дерева в YAML  формате. Так же я изучил форму  Бэкуса-Наура и особенности многочисленных языков разметки.
-    
+В ходе этой лабораторной работы я реализовал парсинг XML файлов через абстрактое дерево (модель DOM) и вывод дерева в YAML  формате. Сравнил свой парсер с другими. Так же я изучил форму  Бэкуса-Наура и особенности многочисленных языков разметки.
 \end{document}

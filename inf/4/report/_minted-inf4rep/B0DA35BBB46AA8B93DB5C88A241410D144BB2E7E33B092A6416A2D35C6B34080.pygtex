@@ -1,0 +1,11 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{n+nt}{tag\PYGZus{}name}\PYG{p}{:}
+  \PYG{n+nt}{attributes}\PYG{p}{:}
+    \PYG{n+nt}{attr}\PYG{p}{:} \PYG{l+lScalar+lScalarPlain}{value}
+    \PYG{n+nt}{attr1}\PYG{p}{:} \PYG{l+lScalar+lScalarPlain}{value}
+    \PYG{l+lScalar+lScalarPlain}{...}
+  \PYG{n+nt}{tag1}\PYG{p}{:} \PYG{l+lScalar+lScalarPlain}{...}
+  \PYG{n+nt}{tag2}\PYG{p}{:} \PYG{l+lScalar+lScalarPlain}{..}
+  \PYG{l+lScalar+lScalarPlain}{...}
+\PYG{n+nn}{...}
+\end{Verbatim}

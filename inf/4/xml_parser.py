@@ -142,8 +142,8 @@ def to_yaml(el: XmlSection, f, d=0, indent='  '):
             d -= 1
 
 
-def parse(file: str) -> Optional[XmlSection]:
-    tokens = xml_lexer.get_tokens(file)
+def parse(f) -> Optional[XmlSection]:
+    tokens = xml_lexer.get_tokens(f)
     if not len(tokens):
         return
     start = 0
