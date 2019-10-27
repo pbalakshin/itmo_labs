@@ -1,0 +1,16 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k+kn}{import} \PYG{n+nn}{xmlplain}
+
+
+\PYG{k}{def} \PYG{n+nf}{test}\PYG{p}{(}\PYG{n}{inf}\PYG{p}{,} \PYG{n}{outf}\PYG{p}{):}
+    \PYG{k}{with} \PYG{n+nb}{open}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}schedule.xml\PYGZsq{}}\PYG{p}{,} \PYG{n}{encoding}\PYG{o}{=}\PYG{l+s+s1}{\PYGZsq{}utf\PYGZhy{}8\PYGZsq{}}\PYG{p}{)} \PYG{k}{as} \PYG{n}{inf}\PYG{p}{,} \PYGZbs{}
+         \PYG{n+nb}{open}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}schedule\PYGZus{}xmlplain.yaml\PYGZdq{}}\PYG{p}{,} \PYG{l+s+s2}{\PYGZdq{}w\PYGZdq{}}\PYG{p}{,} \PYG{n}{encoding}\PYG{o}{=}\PYG{l+s+s1}{\PYGZsq{}utf\PYGZhy{}8\PYGZsq{}}\PYG{p}{)} \PYG{k}{as} \PYG{n}{outf}\PYG{p}{:}
+        \PYG{n}{root} \PYG{o}{=} \PYG{n}{xmlplain}\PYG{o}{.}\PYG{n}{xml\PYGZus{}to\PYGZus{}obj}\PYG{p}{(}\PYG{n}{inf}\PYG{p}{,} \PYG{n}{strip\PYGZus{}space}\PYG{o}{=}\PYG{n+nb+bp}{True}\PYG{p}{,} \PYG{n}{fold\PYGZus{}dict}\PYG{o}{=}\PYG{n+nb+bp}{True}\PYG{p}{)}
+        \PYG{n}{xmlplain}\PYG{o}{.}\PYG{n}{obj\PYGZus{}to\PYGZus{}yaml}\PYG{p}{(}\PYG{n}{root}\PYG{p}{,} \PYG{n}{outf}\PYG{p}{)}
+
+
+\PYG{k}{if} \PYG{n+nv+vm}{\PYGZus{}\PYGZus{}name\PYGZus{}\PYGZus{}} \PYG{o}{==} \PYG{l+s+s2}{\PYGZdq{}\PYGZus{}\PYGZus{}main\PYGZus{}\PYGZus{}\PYGZdq{}}\PYG{p}{:}
+    \PYG{k}{with} \PYG{n+nb}{open}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}schedule.xml\PYGZsq{}}\PYG{p}{,} \PYG{n}{encoding}\PYG{o}{=}\PYG{l+s+s1}{\PYGZsq{}utf\PYGZhy{}8\PYGZsq{}}\PYG{p}{)} \PYG{k}{as} \PYG{n}{inf}\PYG{p}{,} \PYGZbs{}
+         \PYG{n+nb}{open}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}schedule\PYGZus{}xmlplain.yaml\PYGZdq{}}\PYG{p}{,} \PYG{l+s+s2}{\PYGZdq{}w\PYGZdq{}}\PYG{p}{,} \PYG{n}{encoding}\PYG{o}{=}\PYG{l+s+s1}{\PYGZsq{}utf\PYGZhy{}8\PYGZsq{}}\PYG{p}{)} \PYG{k}{as} \PYG{n}{outf}\PYG{p}{:}
+        \PYG{n}{test}\PYG{p}{(}\PYG{n}{inf}\PYG{p}{,} \PYG{n}{outf}\PYG{p}{)}
+\end{Verbatim}

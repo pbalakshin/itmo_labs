@@ -15,7 +15,7 @@ def test_lib(lib, inf, outf, text):
 
 
 with open(os.devnull, "w") as null, \
-     open('schedule.xml') as inf:
+     open('schedule.xml', encoding='utf-8') as inf:
     test_lib(xmlplain_test, inf, null,
              'xmlplain')
     test_lib(xmltodict_test, inf, null,

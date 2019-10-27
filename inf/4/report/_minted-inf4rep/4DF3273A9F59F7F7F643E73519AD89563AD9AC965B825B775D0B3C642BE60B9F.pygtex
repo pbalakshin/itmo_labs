@@ -1,0 +1,26 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k+kn}{import} \PYG{n+nn}{time}
+\PYG{k+kn}{import} \PYG{n+nn}{xmlplain\PYGZus{}test}
+\PYG{k+kn}{import} \PYG{n+nn}{xmltodict\PYGZus{}test}
+\PYG{k+kn}{import} \PYG{n+nn}{inf\PYGZus{}lab4}
+\PYG{k+kn}{import} \PYG{n+nn}{os}
+
+
+\PYG{k}{def} \PYG{n+nf}{test\PYGZus{}lib}\PYG{p}{(}\PYG{n}{lib}\PYG{p}{,} \PYG{n}{inf}\PYG{p}{,} \PYG{n}{outf}\PYG{p}{,} \PYG{n}{text}\PYG{p}{):}
+    \PYG{n}{start} \PYG{o}{=} \PYG{n}{time}\PYG{o}{.}\PYG{n}{time}\PYG{p}{()}
+    \PYG{k}{for} \PYG{n}{\PYGZus{}} \PYG{o+ow}{in} \PYG{n+nb}{range}\PYG{p}{(}\PYG{l+m+mi}{10}\PYG{p}{):}
+        \PYG{n}{lib}\PYG{o}{.}\PYG{n}{test}\PYG{p}{(}\PYG{n}{inf}\PYG{p}{,} \PYG{n}{outf}\PYG{p}{)}
+        \PYG{n}{inf}\PYG{o}{.}\PYG{n}{seek}\PYG{p}{(}\PYG{l+m+mi}{0}\PYG{p}{)}
+    \PYG{n}{stop} \PYG{o}{=} \PYG{n}{time}\PYG{o}{.}\PYG{n}{time}\PYG{p}{()}
+    \PYG{k}{print}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+si}{\PYGZpc{}s}\PYG{l+s+s1}{: \PYGZsq{}} \PYG{o}{\PYGZpc{}} \PYG{n}{text}\PYG{p}{,} \PYG{n}{stop} \PYG{o}{\PYGZhy{}} \PYG{n}{start}\PYG{p}{)}
+
+
+\PYG{k}{with} \PYG{n+nb}{open}\PYG{p}{(}\PYG{n}{os}\PYG{o}{.}\PYG{n}{devnull}\PYG{p}{,} \PYG{l+s+s2}{\PYGZdq{}w\PYGZdq{}}\PYG{p}{)} \PYG{k}{as} \PYG{n}{null}\PYG{p}{,} \PYGZbs{}
+     \PYG{n+nb}{open}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}schedule.xml\PYGZsq{}}\PYG{p}{,} \PYG{n}{encoding}\PYG{o}{=}\PYG{l+s+s1}{\PYGZsq{}utf\PYGZhy{}8\PYGZsq{}}\PYG{p}{)} \PYG{k}{as} \PYG{n}{inf}\PYG{p}{:}
+    \PYG{n}{test\PYGZus{}lib}\PYG{p}{(}\PYG{n}{xmlplain\PYGZus{}test}\PYG{p}{,} \PYG{n}{inf}\PYG{p}{,} \PYG{n}{null}\PYG{p}{,}
+             \PYG{l+s+s1}{\PYGZsq{}xmlplain\PYGZsq{}}\PYG{p}{)}
+    \PYG{n}{test\PYGZus{}lib}\PYG{p}{(}\PYG{n}{xmltodict\PYGZus{}test}\PYG{p}{,} \PYG{n}{inf}\PYG{p}{,} \PYG{n}{null}\PYG{p}{,}
+             \PYG{l+s+s1}{\PYGZsq{}xmltodict\PYGZsq{}}\PYG{p}{)}
+    \PYG{n}{test\PYGZus{}lib}\PYG{p}{(}\PYG{n}{inf\PYGZus{}lab4}\PYG{p}{,} \PYG{n}{inf}\PYG{p}{,} \PYG{n}{null}\PYG{p}{,}
+             \PYG{l+s+s1}{\PYGZsq{}my own lib\PYGZsq{}}\PYG{p}{)}
+\end{Verbatim}

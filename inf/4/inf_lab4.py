@@ -7,6 +7,6 @@ def test(inf, outf):
 
 
 if __name__ == "__main__":
-    with open('schedule.xml') as inf, \
-         open("schedule.yaml", "w") as outf:
+    with open('schedule.xml', encoding='utf-8') as inf, \
+         open("schedule.yaml", "w", encoding='utf-8') as outf:
         test(inf, outf)

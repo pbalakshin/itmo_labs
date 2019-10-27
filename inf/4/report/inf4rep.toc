@@ -1,23 +1,23 @@
 \babel@toc {russian}{}
-\contentsline {section}{\numberline {1}\IeC {\CYRZ }\IeC {\cyra }\IeC {\cyrd }\IeC {\cyra }\IeC {\cyrn }\IeC {\cyri }\IeC {\cyre }}{3}{section.1}% 
-\contentsline {section}{\numberline {2}\IeC {\CYRI }\IeC {\cyrs }\IeC {\cyrh }\IeC {\cyro }\IeC {\cyrd }\IeC {\cyrn }\IeC {\cyrery }\IeC {\cyrishrt } \IeC {\cyrf }\IeC {\cyra }\IeC {\cyri }\IeC {\cyrl }}{4}{section.2}% 
+\contentsline {section}{\numberline {1}Задание}{3}{section.1}% 
+\contentsline {section}{\numberline {2}Исходный фаил}{4}{section.2}% 
 \contentsline {subsection}{\numberline {2.1}schedule.xml}{4}{subsection.2.1}% 
-\contentsline {section}{\numberline {3}\IeC {\CYRR }\IeC {\cyre }\IeC {\cyrz }\IeC {\cyru }\IeC {\cyrl }\IeC {\cyrsftsn }\IeC {\cyrt }\IeC {\cyra }\IeC {\cyrt }}{5}{section.3}% 
+\contentsline {section}{\numberline {3}Результат}{5}{section.3}% 
 \contentsline {subsection}{\numberline {3.1}schedule.yaml}{5}{subsection.3.1}% 
-\contentsline {section}{\numberline {4}\IeC {\CYRI }\IeC {\cyrs }\IeC {\cyrh }\IeC {\cyro }\IeC {\cyrd }\IeC {\cyrn }\IeC {\cyrery }\IeC {\cyrishrt } \IeC {\cyrk }\IeC {\cyro }\IeC {\cyrd } \IeC {\cyrp }\IeC {\cyrr }\IeC {\cyro }\IeC {\cyrg }\IeC {\cyrr }\IeC {\cyra }\IeC {\cyrm }\IeC {\cyrm }\IeC {\cyrery }}{6}{section.4}% 
+\contentsline {section}{\numberline {4}Исходный код программы}{6}{section.4}% 
 \contentsline {subsection}{\numberline {4.1}\texttt {inf\_lab4.py}}{6}{subsection.4.1}% 
 \contentsline {subsection}{\numberline {4.2}\texttt {xml\_lexer.py}}{6}{subsection.4.2}% 
 \contentsline {subsection}{\numberline {4.3}\texttt {xml\_parse.py}}{7}{subsection.4.3}% 
-\contentsline {section}{\numberline {5}\IeC {\CYRN }\IeC {\cyre }\IeC {\cyro }\IeC {\cyrb }\IeC {\cyrya }\IeC {\cyrz }\IeC {\cyra }\IeC {\cyrt }\IeC {\cyre }\IeC {\cyrl }\IeC {\cyrsftsn }\IeC {\cyrn }\IeC {\cyro } \IeC {\cyrz }\IeC {\cyra }\IeC {\cyrd }\IeC {\cyra }\IeC {\cyrn }\IeC {\cyri }\IeC {\cyre } 1}{11}{section.5}% 
+\contentsline {section}{\numberline {5}Необязательно задание 1}{11}{section.5}% 
 \contentsline {subsection}{\numberline {5.1}\texttt {xmlplain}}{11}{subsection.5.1}% 
 \contentsline {subsubsection}{\numberline {5.1.1}\texttt {xmlplain\_test.py}}{11}{subsubsection.5.1.1}% 
 \contentsline {subsubsection}{\numberline {5.1.2}\texttt {schedule\_xmlplain.yaml}}{11}{subsubsection.5.1.2}% 
-\contentsline {subsubsection}{\numberline {5.1.3}\IeC {\CYRV }\IeC {\cyrery }\IeC {\cyrv }\IeC {\cyro }\IeC {\cyrd }}{12}{subsubsection.5.1.3}% 
-\contentsline {subsection}{\numberline {5.2}\texttt {xmltodict} \IeC {\cyri } \texttt {PyYAML}}{12}{subsection.5.2}% 
+\contentsline {subsubsection}{\numberline {5.1.3}Вывод}{12}{subsubsection.5.1.3}% 
+\contentsline {subsection}{\numberline {5.2}\texttt {xmltodict} и \texttt {PyYAML}}{12}{subsection.5.2}% 
 \contentsline {subsubsection}{\numberline {5.2.1} \texttt {xmltodict\_test.py}}{12}{subsubsection.5.2.1}% 
-\contentsline {subsubsection}{\numberline {5.2.2}\IeC {\CYRV }\IeC {\cyrery }\IeC {\cyrv }\IeC {\cyro }\IeC {\cyrd }}{13}{subsubsection.5.2.2}% 
-\contentsline {subsection}{\numberline {5.3}\IeC {\CYRV }\IeC {\cyrery }\IeC {\cyrv }\IeC {\cyro }\IeC {\cyrd }}{13}{subsection.5.3}% 
-\contentsline {section}{\numberline {6}\IeC {\CYRN }\IeC {\cyre }\IeC {\cyro }\IeC {\cyrb }\IeC {\cyrya }\IeC {\cyrz }\IeC {\cyra }\IeC {\cyrt }\IeC {\cyre }\IeC {\cyrl }\IeC {\cyrsftsn }\IeC {\cyrn }\IeC {\cyro }\IeC {\cyre } \IeC {\cyrz }\IeC {\cyra }\IeC {\cyrd }\IeC {\cyra }\IeC {\cyrn }\IeC {\cyri }\IeC {\cyre } 2}{14}{section.6}% 
+\contentsline {subsubsection}{\numberline {5.2.2}Вывод}{13}{subsubsection.5.2.2}% 
+\contentsline {subsection}{\numberline {5.3}Вывод}{13}{subsection.5.3}% 
+\contentsline {section}{\numberline {6}Необязательное задание 2}{14}{section.6}% 
 \contentsline {subsubsection}{\numberline {6.0.1} \texttt {test\_libs.py}}{14}{subsubsection.6.0.1}% 
-\contentsline {subsubsection}{\numberline {6.0.2} \IeC {\CYRR }\IeC {\cyre }\IeC {\cyrz }\IeC {\cyru }\IeC {\cyrl }\IeC {\cyrsftsn }\IeC {\cyrt }\IeC {\cyra }\IeC {\cyrt }\IeC {\cyrery }}{14}{subsubsection.6.0.2}% 
-\contentsline {section}{\numberline {7}\IeC {\CYRV }\IeC {\cyrery }\IeC {\cyrv }\IeC {\cyro }\IeC {\cyrd }}{14}{section.7}% 
+\contentsline {subsubsection}{\numberline {6.0.2} Результаты}{14}{subsubsection.6.0.2}% 
+\contentsline {section}{\numberline {7}Вывод}{14}{section.7}% 
