@@ -1,19 +1,10 @@
 package com.kupp.prog3lab;
 
-public class Moomin {
-  private String name;
-  private MoominGender gender;
-
-  public Moomin(String name, MoominGender gender) {
-    this.name = name;
-    this.gender = gender;
-  }
-
-  public String getName() {
-    return this.name;
-  }
-
-  public MoominGender getGender() {
-    return this.gender;
-  }
+public interface Moomin {
+  String getName();
+  Gender getGender();
+  int getAge();
+  void interactWithThing(Thing thing);
+  void say(String text);
+  void think(String text);
 }

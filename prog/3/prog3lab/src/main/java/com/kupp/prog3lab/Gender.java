@@ -1,7 +1,7 @@
 package com.kupp.prog3lab;
 
-public enum MoominGender {
+public enum Gender {
   MALE,
   FEMALE,
-  UNIDENTIFIED
+  UNRECOGNIZED
 }
