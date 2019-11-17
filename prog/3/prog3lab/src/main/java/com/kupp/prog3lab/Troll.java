@@ -5,7 +5,5 @@ public abstract class Troll extends NamedEntity {
     super(name);
   }
 
-  protected void interact(String action, Named named) {
-    System.out.printf("%s %s %s\n", this.getName(), action, named.getName());
-  }
+  protected abstract void interact(String action, Named named);
 }
