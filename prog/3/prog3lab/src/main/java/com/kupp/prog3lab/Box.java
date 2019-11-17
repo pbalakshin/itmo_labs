@@ -14,6 +14,25 @@ public class Box extends NamedEntity {
 
   @Override
   public String getName() {
-    return String.format("%s %s", type.getString(), super.getName());
+    return String.format("%s %s", type.toString(), super.getName());
+  }
+
+  @Override
+  public boolean equals(Object o) {
+    if (!(o instanceof Box)) {
+      return false;
+    }
+    Box other = (Box) o;
+    return other.getName().equals(this.getName());
+  }
+
+  @Override
+  public String toString() {
+    return this.getName();
+  }
+
+  @Override
+  public int hashCode() {
+    return this.getName().hashCode();
   }
 }

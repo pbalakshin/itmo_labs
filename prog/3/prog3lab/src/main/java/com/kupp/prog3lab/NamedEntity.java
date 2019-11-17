@@ -24,4 +24,9 @@ public abstract class NamedEntity implements Named {
     NamedEntity other = (NamedEntity) o;
     return other.getName().equals(this.getName());
   }
+
+  @Override
+  public String toString() {
+    return String.format("NamedEntity with name \"%s\"", this.getName());
+  }
 }

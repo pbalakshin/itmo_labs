@@ -1,14 +1,13 @@
 package com.kupp.prog3lab;
 
-public enum BoxTypes {
-  SQUARE("square", 0),
-  ROUND("round", 1),
-  TRIANGLE("triangle", 2);
+public enum TrollTypes {
+  EVILDOER("evildoer", 0),
+  GOOD("good", 1),
+  NERVOUS("nervous", 2);
 
   private String str;
   private int val;
-
-  BoxTypes(String str, int val) {
+  TrollTypes(String str, int val) {
     this.str = str;
     this.val = val;
   }
