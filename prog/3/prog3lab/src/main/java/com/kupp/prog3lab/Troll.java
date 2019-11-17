@@ -12,5 +12,8 @@ public abstract class Troll extends NamedEntity {
     return type;
   }
 
-  protected abstract void interact(String action, Named named);
+  public abstract void interact(String action, Named named);
+  public abstract void lookAround();
+  public abstract void see(Named named);
+  public abstract void ponder();
 }

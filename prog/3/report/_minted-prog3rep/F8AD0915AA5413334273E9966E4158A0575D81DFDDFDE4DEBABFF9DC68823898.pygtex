@@ -1,0 +1,7 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k+kn}{package} \PYG{n+nn}{com.kupp.prog3lab}\PYG{o}{;}
+
+\PYG{k+kd}{public} \PYG{k+kd}{interface} \PYG{n+nc}{ThinkingCreature} \PYG{k+kd}{extends} \PYG{n}{Named} \PYG{o}{\PYGZob{}}
+  \PYG{k+kt}{void} \PYG{n+nf}{think}\PYG{o}{(}\PYG{n}{String} \PYG{n}{about}\PYG{o}{);}
+\PYG{o}{\PYGZcb{}}
+\end{Verbatim}

@@ -5,12 +5,24 @@ public class MoominTroll extends Troll implements ThinkingCreature {
     super(name, type);
   }
 
-  protected void interact(String action, Named named) {
-    System.out.printf("%s %s %s\n", this.getName(), action, named.getName());
+  public void interact(String action, Named named) {
+    System.out.printf("%s %s %s.\n", this.getName(), action, named.getName());
+  }
+
+  public void lookAround() {
+    System.out.printf("%s look around.\n", this.getName());
+  }
+
+  public void see(Named named) {
+    System.out.printf("%s see %s.\n", this.getName(), named.getName());
+  }
+
+  public void ponder() {
+    System.out.printf("%s is thinking about it.\n", this.getName());
   }
 
   public void think(String about) {
-    System.out.printf("%s think that %s\n", this.getName(), about);
+    System.out.printf("%s think that %s.\n", this.getName(), about);
   }
 
   @Override

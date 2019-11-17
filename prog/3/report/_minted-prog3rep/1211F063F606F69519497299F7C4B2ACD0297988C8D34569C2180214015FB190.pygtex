@@ -1,0 +1,25 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k+kn}{package} \PYG{n+nn}{com.kupp.prog3lab}\PYG{o}{;}
+
+\PYG{k+kd}{public} \PYG{k+kd}{enum} \PYG{n}{TrollTypes} \PYG{o}{\PYGZob{}}
+  \PYG{n}{EVILDOER}\PYG{o}{(}\PYG{l+s}{\PYGZdq{}evildoer\PYGZdq{}}\PYG{o}{,} \PYG{l+m+mi}{0}\PYG{o}{),}
+  \PYG{n}{GOOD}\PYG{o}{(}\PYG{l+s}{\PYGZdq{}good\PYGZdq{}}\PYG{o}{,} \PYG{l+m+mi}{1}\PYG{o}{),}
+  \PYG{n}{NERVOUS}\PYG{o}{(}\PYG{l+s}{\PYGZdq{}nervous\PYGZdq{}}\PYG{o}{,} \PYG{l+m+mi}{2}\PYG{o}{);}
+
+  \PYG{k+kd}{private} \PYG{n}{String} \PYG{n}{str}\PYG{o}{;}
+  \PYG{k+kd}{private} \PYG{k+kt}{int} \PYG{n}{val}\PYG{o}{;}
+  \PYG{n}{TrollTypes}\PYG{o}{(}\PYG{n}{String} \PYG{n}{str}\PYG{o}{,} \PYG{k+kt}{int} \PYG{n}{val}\PYG{o}{)} \PYG{o}{\PYGZob{}}
+    \PYG{k}{this}\PYG{o}{.}\PYG{n+na}{str} \PYG{o}{=} \PYG{n}{str}\PYG{o}{;}
+    \PYG{k}{this}\PYG{o}{.}\PYG{n+na}{val} \PYG{o}{=} \PYG{n}{val}\PYG{o}{;}
+  \PYG{o}{\PYGZcb{}}
+
+  \PYG{n+nd}{@Override}
+  \PYG{k+kd}{public} \PYG{n}{String} \PYG{n+nf}{toString}\PYG{o}{()} \PYG{o}{\PYGZob{}}
+    \PYG{k}{return} \PYG{k}{this}\PYG{o}{.}\PYG{n+na}{str}\PYG{o}{;}
+  \PYG{o}{\PYGZcb{}}
+
+  \PYG{k+kd}{public} \PYG{k+kt}{int} \PYG{n+nf}{getValue}\PYG{o}{()} \PYG{o}{\PYGZob{}}
+    \PYG{k}{return} \PYG{k}{this}\PYG{o}{.}\PYG{n+na}{val}\PYG{o}{;}
+  \PYG{o}{\PYGZcb{}}
+\PYG{o}{\PYGZcb{}}
+\end{Verbatim}

@@ -1,0 +1,40 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k+kn}{package} \PYG{n+nn}{com.kupp.prog3lab}\PYG{o}{;}
+
+\PYG{k+kd}{public} \PYG{k+kd}{class} \PYG{n+nc}{PieTray} \PYG{k+kd}{extends} \PYG{n}{NamedEntity} \PYG{o}{\PYGZob{}}
+  \PYG{k+kd}{private} \PYG{k+kt}{int} \PYG{n}{pieCount}\PYG{o}{;}
+  \PYG{k+kd}{public} \PYG{n+nf}{PieTray}\PYG{o}{(}\PYG{k+kt}{int} \PYG{n}{pieCount}\PYG{o}{)} \PYG{o}{\PYGZob{}}
+    \PYG{k+kd}{super}\PYG{o}{(}\PYG{l+s}{\PYGZdq{}pie tray\PYGZdq{}}\PYG{o}{);}
+    \PYG{k}{this}\PYG{o}{.}\PYG{n+na}{pieCount} \PYG{o}{=} \PYG{n}{pieCount}\PYG{o}{;}
+  \PYG{o}{\PYGZcb{}}
+
+  \PYG{k+kd}{public} \PYG{k+kt}{int} \PYG{n+nf}{getPieCount}\PYG{o}{()} \PYG{o}{\PYGZob{}}
+    \PYG{k}{return} \PYG{n}{pieCount}\PYG{o}{;}
+  \PYG{o}{\PYGZcb{}}
+
+  \PYG{k+kd}{public} \PYG{k+kt}{void} \PYG{n+nf}{setPieCount}\PYG{o}{(}\PYG{k+kt}{int} \PYG{n}{pieCount}\PYG{o}{)} \PYG{o}{\PYGZob{}}
+    \PYG{k}{if} \PYG{o}{(}\PYG{n}{pieCount} \PYG{o}{\PYGZgt{}=} \PYG{l+m+mi}{0}\PYG{o}{)} \PYG{o}{\PYGZob{}}
+      \PYG{k}{this}\PYG{o}{.}\PYG{n+na}{pieCount} \PYG{o}{=} \PYG{n}{pieCount}\PYG{o}{;}
+    \PYG{o}{\PYGZcb{}}
+  \PYG{o}{\PYGZcb{}}
+
+  \PYG{n+nd}{@Override}
+  \PYG{k+kd}{public} \PYG{k+kt}{boolean} \PYG{n+nf}{equals}\PYG{o}{(}\PYG{n}{Object} \PYG{n}{o}\PYG{o}{)} \PYG{o}{\PYGZob{}}
+    \PYG{k}{if} \PYG{o}{(!(}\PYG{n}{o} \PYG{k}{instanceof} \PYG{n}{PieTray}\PYG{o}{))} \PYG{o}{\PYGZob{}}
+      \PYG{k}{return} \PYG{k+kc}{false}\PYG{o}{;}
+    \PYG{o}{\PYGZcb{}}
+    \PYG{n}{PieTray} \PYG{n}{other} \PYG{o}{=} \PYG{o}{(}\PYG{n}{PieTray}\PYG{o}{)}\PYG{n}{o}\PYG{o}{;}
+    \PYG{k}{return} \PYG{n}{other}\PYG{o}{.}\PYG{n+na}{getPieCount}\PYG{o}{()} \PYG{o}{==} \PYG{k}{this}\PYG{o}{.}\PYG{n+na}{getPieCount}\PYG{o}{();}
+  \PYG{o}{\PYGZcb{}}
+
+  \PYG{n+nd}{@Override}
+  \PYG{k+kd}{public} \PYG{n}{String} \PYG{n+nf}{toString}\PYG{o}{()} \PYG{o}{\PYGZob{}}
+    \PYG{k}{return} \PYG{n}{String}\PYG{o}{.}\PYG{n+na}{format}\PYG{o}{(}\PYG{l+s}{\PYGZdq{}PieTray with \PYGZpc{}d pies\PYGZdq{}}\PYG{o}{,} \PYG{k}{this}\PYG{o}{.}\PYG{n+na}{getPieCount}\PYG{o}{());}
+  \PYG{o}{\PYGZcb{}}
+
+  \PYG{n+nd}{@Override}
+  \PYG{k+kd}{public} \PYG{k+kt}{int} \PYG{n+nf}{hashCode}\PYG{o}{()} \PYG{o}{\PYGZob{}}
+    \PYG{k}{return} \PYG{k}{this}\PYG{o}{.}\PYG{n+na}{getPieCount}\PYG{o}{();}
+  \PYG{o}{\PYGZcb{}}
+\PYG{o}{\PYGZcb{}}
+\end{Verbatim}

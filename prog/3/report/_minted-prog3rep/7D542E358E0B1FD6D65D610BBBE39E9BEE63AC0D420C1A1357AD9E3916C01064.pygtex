@@ -1,0 +1,7 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k+kn}{package} \PYG{n+nn}{com.kupp.prog3lab}\PYG{o}{;}
+
+\PYG{k+kd}{public} \PYG{k+kd}{interface} \PYG{n+nc}{Named} \PYG{o}{\PYGZob{}}
+  \PYG{n}{String} \PYG{n+nf}{getName}\PYG{o}{();}
+\PYG{o}{\PYGZcb{}}
+\end{Verbatim}
