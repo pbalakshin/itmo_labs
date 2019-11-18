@@ -3,7 +3,8 @@ package com.kupp.prog3lab;
 public enum BoxTypes {
   SQUARE("square", 0),
   ROUND("round", 1),
-  TRIANGLE("triangle", 2);
+  TRIANGLE("triangle", 2),
+  NONE("none", 3);
 
   private String str;
   private int val;

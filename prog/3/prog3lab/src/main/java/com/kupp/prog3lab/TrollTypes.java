@@ -3,7 +3,8 @@ package com.kupp.prog3lab;
 public enum TrollTypes {
   EVILDOER("evildoer", 0),
   GOOD("good", 1),
-  NERVOUS("nervous", 2);
+  NERVOUS("nervous", 2),
+  NONE("none", 3);
 
   private String str;
   private int val;

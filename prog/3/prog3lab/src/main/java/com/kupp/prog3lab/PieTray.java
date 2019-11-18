@@ -4,7 +4,11 @@ public class PieTray extends NamedEntity {
   private int pieCount;
   public PieTray(int pieCount) {
     super("pie tray");
-    this.pieCount = pieCount;
+    setPieCount(pieCount);
+  }
+
+  public void howManyPies() {
+    System.out.printf("%d pies on tray now.\n", getPieCount());
   }
 
   public int getPieCount() {
