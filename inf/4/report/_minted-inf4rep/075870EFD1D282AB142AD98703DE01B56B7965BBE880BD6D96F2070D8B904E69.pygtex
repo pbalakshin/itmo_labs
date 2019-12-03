@@ -1,9 +1,0 @@
-\begin{Verbatim}[commandchars=\\\{\}]
-\PYG{n+nt}{tag\PYGZus{}name}\PYG{p}{:}
-\PYG{p+pIndicator}{\PYGZhy{}} \PYG{l+s}{\PYGZsq{}@attr\PYGZsq{}}\PYG{p+pIndicator}{:} \PYG{l+lScalar+lScalarPlain}{value}
-\PYG{p+pIndicator}{\PYGZhy{}} \PYG{l+s}{\PYGZsq{}@attr1\PYGZsq{}}\PYG{p+pIndicator}{:} \PYG{l+lScalar+lScalarPlain}{value}
-\PYG{n+nn}{...}
-  \PYG{n+nt}{tag}\PYG{p}{:} \PYG{l+lScalar+lScalarPlain}{...}
-  \PYG{n+nt}{tag1}\PYG{p}{:} \PYG{l+lScalar+lScalarPlain}{...}
-\PYG{n+nn}{...}
-\end{Verbatim}
