@@ -1,7 +1,6 @@
 package com.kupp.prog4lab;
 
 import com.kupp.prog3lab.*;
-import com.kupp.prog4lab.magical.MagicWandExeption;
 import com.kupp.prog4lab.magical.Snusmumriken;
 
 
