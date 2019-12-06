@@ -6,7 +6,7 @@ public class MoominTroll extends Troll implements ThinkingCreature {
   }
 
   public void interact(String action, Named named) {
-    System.out.printf("%s %s %s.thstqc fyynfwbz" +
+    System.out.printf("%s %s %s" +
             "\n", this.getName(), action, named.getName());
   }
 
@@ -23,7 +23,7 @@ public class MoominTroll extends Troll implements ThinkingCreature {
   }
 
   public  void see(Named named) {
-    System.out.printf("%s see %s unknown dis.\n", this.getName(), named.getName());
+    System.out.printf("%s see %s at an unknown distance.\n", this.getName(), named.getName());
   }
 
   public void ponder(int secs) {

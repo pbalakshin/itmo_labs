@@ -1,0 +1,4 @@
+\babel@toc {russian}{}
+\contentsline {section}{\numberline {1}Векторы, операции над ними, базис}{2}% 
+\contentsline {subsection}{\numberline {1.1}Линейные операции над векторами}{2}% 
+\contentsline {section}{\numberline {2}Скалярное произведение векторов}{2}% 
