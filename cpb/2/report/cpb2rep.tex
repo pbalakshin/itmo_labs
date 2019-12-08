@@ -9,7 +9,7 @@
                          bottom=2cm,
                          marginparsep=7pt,
                          marginparwidth=.6in]{geometry}
-\usepackage{amsmath}
+\usepackage{amsmath, amsthm}
 \usepackage{amsfonts}
 \usepackage{amssymb}
 \usepackage{graphicx}
@@ -21,6 +21,9 @@
 \usepackage{minted}
 \usepackage{makecell}
 \usepackage{multirow}
+\usepackage{hyperref}
+\usepackage{pscyr}
+
 \begin{document}
 	\thispagestyle{empty}
 	\begin{center}
@@ -87,7 +90,7 @@
     \end{table}
 \section{Описание программы}
 \subsection{Назначение и реализуемая функция}
-Программа реализует сложение чисел, записанных в ячейках памяти \texttt{3A} и \texttt{3B} и впоследсвии производит логическое сложение результата предыдущей операции и набором из 16 логических однобитовых значений, записанное в ячейке памяти \texttt{3D}.
+Программа реализует сложение чисел, записанных в ячейках памяти \texttt{3A} и \texttt{3B} и впоследствии производит логическое сложение результата предыдущей операции и набором из 16 логических однобитовых значений, записанное в ячейке памяти \texttt{3D}.
 
 Обозначим число в ячейке памяти \texttt{3A} как $X$, \texttt{3B} как $Y$, набор из 16 однобитовых логических значений ячейки \texttt{3D} как $Z$, а результат (содержимое \texttt{3С}) как $R$:
 \begin{equation}
@@ -105,10 +108,19 @@ R = (X + Y) \lor Z
 Так как $X$ и $Y$ являются знаковыми числами, то для результата их сложения 16-ти битного формата может не хватить, т.е. произойдёт переполнение. Возможно по значению конкретного $X_i$ определить ОДЗ для $Y_i$ по следующей формуле:
 \begin{equation}
 \begin{cases}
-Y_i \in [-2^{15}; \;2^{15} - 1 - X_i], \text{ если } X \geqslant 0\\
-Y_i \in [-2^{15} - X_i; 2^{15} - 1], \text{ если } X < 0
+Y_i \in [-2^{15}; \;2^{15} - 1 - X_i], \; \text{если} \; X \geqslant 0\\
+Y_i \in [-2^{15} - X_i;\; 2^{15} - 1], \; \text{если} \; X < 0
 \end{cases}
 \end{equation}
+
+Генератор ОДЗ для каждого возможного значения $X_i$ и результат в виде таблицы в формате CSV доступен в следующем репозитории:\\
+\begin{center}
+\href{https://github.com/kupp1/itmo_labs/tree/master/cpb/2}{https://github.com/kupp1/itmo\_labs/tree/master/cpb/2}
+\end{center} 
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.3]{../link.png}
+\end{figure}
 
 В качестве упрощения можно определить, что результат будет корректен, когда знаки чисел не совпадают, или когда оба числа равны нулю, или когда бит, предшествующий старшему (знаковому) этих чисел  равен нулю:
 \begin{equation}

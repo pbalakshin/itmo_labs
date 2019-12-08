@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Arch Linux) (preloaded format=pdflatex 2019.11.15)  8 DEC 2019 13:41
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Arch Linux) (preloaded format=pdflatex 2019.11.15)  8 DEC 2019 14:35
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -352,6 +352,18 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 734.
 LaTeX Info: Redefining \[ on input line 2855.
 LaTeX Info: Redefining \] on input line 2856.
 )
+(/usr/share/texmf-dist/tex/latex/amscls/amsthm.sty
+Package: amsthm 2017/10/31 v2.20.4
+\thm@style=\toks23
+\thm@bodyfont=\toks24
+\thm@headfont=\toks25
+\thm@notefont=\toks26
+\thm@headpunct=\toks27
+\thm@preskip=\skip46
+\thm@postskip=\skip47
+\thm@headsep=\skip48
+\dth@everypar=\toks28
+)
 (/usr/share/texmf-dist/tex/latex/amsfonts/amsfonts.sty
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 \symAMSa=\mathgroup4
@@ -500,7 +512,7 @@ Package: rerunfilecheck 2016/05/16 v1.8 Rerun checks for auxiliary files (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 82.
 )
-\Hy@SectionHShift=\skip46
+\Hy@SectionHShift=\skip49
 )
 (/usr/share/texmf-dist/tex/latex/t2/mathtext.sty
 Package: mathtext 2018/04/14 v1.0 transparent text-and-math defs
@@ -509,9 +521,9 @@ LaTeX Info: Redefining \halign on input line 121.
 (/usr/share/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \c@float@type=\count115
-\float@exts=\toks23
+\float@exts=\toks29
 \float@box=\box29
-\@float@everytoks=\toks24
+\@float@everytoks=\toks30
 \@floatcapt=\box30
 )
 (/usr/share/texmf-dist/tex/latex/minted/minted.sty
@@ -706,7 +718,7 @@ Package textcomp Info: Setting ptmj sub-encoding to TS1/4 on input line 409.
 (/usr/share/texmf-dist/tex/latex/lineno/lineno.sty
 Package: lineno 2005/11/02 line numbers on paragraphs v4.41
 \linenopenalty=\count120
-\output=\toks25
+\output=\toks31
 \linenoprevgraf=\count121
 \linenumbersep=\dimen127
 \linenumberwidth=\dimen128
@@ -724,7 +736,7 @@ LaTeX Info: Redefining \\ on input line 3056.
 \c@FV@TrueTabGroupLevel=\count127
 \c@FV@TrueTabCounter=\count128
 \FV@TabBox@Group=\box33
-\FV@TmpLength=\skip47
+\FV@TmpLength=\skip50
 \c@FV@HighlightLinesStart=\count129
 \c@FV@HighlightLinesStop=\count130
 \FV@LoopCount=\count131
@@ -750,12 +762,12 @@ Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
 \calc@Bcount=\count139
 \calc@Adimen=\dimen138
 \calc@Bdimen=\dimen139
-\calc@Askip=\skip48
-\calc@Bskip=\skip49
+\calc@Askip=\skip51
+\calc@Bskip=\skip52
 LaTeX Info: Redefining \setlength on input line 80.
 LaTeX Info: Redefining \addtolength on input line 81.
 \calc@Ccount=\count140
-\calc@Cskip=\skip50
+\calc@Cskip=\skip53
 )
 (/usr/share/texmf-dist/tex/latex/tools/shellesc.sty
 Package: shellesc 2016/06/07 v0.02b unified shell escape interface for LaTeX
@@ -782,7 +794,7 @@ Package: xstring 2019/02/06 v1.83 String manipulations (CT)
 )
 (/usr/share/texmf-dist/tex/latex/framed/framed.sty
 Package: framed 2011/10/22 v 0.96: framed or shaded text with page breaks
-\OuterFrameSep=\skip51
+\OuterFrameSep=\skip54
 \fb@frw=\dimen140
 \fb@frh=\dimen141
 \FrameRule=\dimen142
@@ -793,7 +805,7 @@ Package: framed 2011/10/22 v 0.96: framed or shaded text with page breaks
 \minted@code=\write4
 \c@minted@FancyVerbLineTemp=\count143
 \c@minted@pygmentizecounter=\count144
-\@float@every@listing=\toks26
+\@float@every@listing=\toks32
 \c@listing=\count145
 )
 runsystem(mkdir -p _minted-cpb2rep)...executed.
@@ -807,20 +819,20 @@ Package: array 2019/08/31 v2.4l Tabular extension package (FMi)
 \col@sep=\dimen144
 \ar@mcellbox=\box38
 \extrarowheight=\dimen145
-\NC@list=\toks27
-\extratabsurround=\skip52
-\backup@length=\skip53
+\NC@list=\toks33
+\extratabsurround=\skip55
+\backup@length=\skip56
 \ar@cellbox=\box39
 )
 \rotheadsize=\dimen146
 \c@nlinenum=\count146
-\TeXr@lab=\toks28
+\TeXr@lab=\toks34
 )
 (/usr/share/texmf-dist/tex/latex/multirow/multirow.sty
 Package: multirow 2019/05/31 v2.5 Span multiple rows of a table
-\multirow@colwidth=\skip54
+\multirow@colwidth=\skip57
 \multirow@cntb=\count147
-\multirow@dima=\skip55
+\multirow@dima=\skip58
 \bigstrutjot=\dimen147
 )
 (/usr/share/texmf-dist/tex/latex/xcolor/xcolor.sty
@@ -853,40 +865,40 @@ File: t2acmr.fd 2001/08/11 v1.0a Computer Modern Cyrillic font definitions
 ))
 \openout1 = `cpb2rep.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for T2A/cmr/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 24.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for T2A/cmr/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 27.
 LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 2
-4.
+7.
 
 (/usr/share/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Trying to load font information for T1+faq on input line 24
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Trying to load font information for T1+faq on input line 27
 .
 
 (/usr/share/texmf-dist/tex/latex/pscyr/t1faq.fd
 File: t1faq.fd 2004/03/22 Fontinst v1.914 font definitions for T1/faq.
 )
 LaTeX Font Info:    Trying to load font information for T2A+faq on input line 2
-4.
+7.
 
 (/usr/share/texmf-dist/tex/latex/pscyr/t2afaq.fd
 File: t2afaq.fd 2004/09/23 Fontinst v1.914 font definitions for T2A/faq.
@@ -932,12 +944,12 @@ File: t2afaq.fd 2004/09/23 Fontinst v1.914 font definitions for T2A/faq.
 \scratchbox=\box40
 \nofMPsegments=\count149
 \nofMParguments=\count150
-\everyMPshowfont=\toks29
+\everyMPshowfont=\toks35
 \MPscratchCnt=\count151
 \MPscratchDim=\dimen149
 \MPnumerator=\count152
 \makeMPintoPDFobject=\count153
-\everyMPtoPDFconversion=\toks30
+\everyMPtoPDFconversion=\toks36
 ) (/usr/share/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
 
@@ -956,7 +968,7 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 \AtBeginShipoutBox=\box41
-Package hyperref Info: Link coloring OFF on input line 24.
+Package hyperref Info: Link coloring OFF on input line 27.
 
 (/usr/share/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
@@ -966,9 +978,9 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count154
 )
-LaTeX Info: Redefining \ref on input line 24.
-LaTeX Info: Redefining \pageref on input line 24.
-LaTeX Info: Redefining \nameref on input line 24.
+LaTeX Info: Redefining \ref on input line 27.
+LaTeX Info: Redefining \pageref on input line 27.
+LaTeX Info: Redefining \nameref on input line 27.
  (./cpb2rep.out) (./cpb2rep.out)
 \@outlinefile=\write5
 \openout5 = `cpb2rep.out'.
@@ -976,7 +988,7 @@ LaTeX Info: Redefining \nameref on input line 24.
 <../../../itmo-logo.png, id=40, 484.81125pt x 353.32pt>
 File: ../../../itmo-logo.png Graphic file (type png)
 <use ../../../itmo-logo.png>
-Package pdftex.def Info: ../../../itmo-logo.png  used on input line 32.
+Package pdftex.def Info: ../../../itmo-logo.png  used on input line 35.
 (pdftex.def)             Requested size: 120.45044pt x 87.77988pt.
  [1
 
@@ -1008,56 +1020,66 @@ LaTeX Font Warning: Font shape `TS1/faq/m/n' undefined
 <../task.png, id=64, 88.33pt x 255.95625pt>
 File: ../task.png Graphic file (type png)
 <use ../task.png>
-Package pdftex.def Info: ../task.png  used on input line 64.
+Package pdftex.def Info: ../task.png  used on input line 67.
 (pdftex.def)             Requested size: 61.83057pt x 179.16814pt.
-LaTeX Font Info:    Trying to load font information for T2A+fer on input line 6
-8.
+LaTeX Font Info:    Trying to load font information for T2A+fer on input line 7
+1.
  (/usr/share/texmf-dist/tex/latex/pscyr/t2afer.fd
 File: t2afer.fd 2004/09/21 Fontinst v1.914 font definitions for T2A/fer.
 )
-Overfull \hbox (33.85901pt too wide) in paragraph at lines 69--87
+Overfull \hbox (33.85901pt too wide) in paragraph at lines 72--90
 [][]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 69--87
+Underfull \hbox (badness 10000) in paragraph at lines 72--90
 
  []
 
 [3 <../task.png (PNG copy)>]
-Overfull \hbox (39.32962pt too wide) in paragraph at lines 146--160
+Underfull \hbox (badness 10000) in paragraph at lines 116--117
+
+ []
+
+<../link.png, id=76, 334.24875pt x 334.24875pt>
+File: ../link.png Graphic file (type png)
+<use ../link.png>
+Package pdftex.def Info: ../link.png  used on input line 122.
+(pdftex.def)             Requested size: 100.27539pt x 100.27539pt.
+
+Overfull \hbox (39.32962pt too wide) in paragraph at lines 158--172
 [][] 
  []
 
-[4]
-Overfull \hbox (33.85901pt too wide) in paragraph at lines 164--178
+[4 <../link.png>]
+Overfull \hbox (33.85901pt too wide) in paragraph at lines 176--190
 [][]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 164--178
+Underfull \hbox (badness 10000) in paragraph at lines 176--190
 
  []
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 179.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 191.
 [5]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 179.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 191.
  (./cpb2rep.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 179.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 179.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 191.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 191.
 Package rerunfilecheck Info: File `cpb2rep.out' has not changed.
 (rerunfilecheck)             Checksum: 89F7FEC5ED28A31A5C4C1EEF3BF1BF34;2688.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 179.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 191.
  ) 
 Here is how much of TeX's memory you used:
- 15691 strings out of 492167
- 231971 string characters out of 6131557
- 377092 words of memory out of 5000000
- 19813 multiletter control sequences out of 15000+600000
+ 15755 strings out of 492167
+ 232746 string characters out of 6131557
+ 379290 words of memory out of 5000000
+ 19872 multiletter control sequences out of 15000+600000
  41942 words of font info for 75 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  45i,15n,37p,959b,428s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1074,10 +1096,10 @@ c/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/pscyr/ercour
 .pfb></usr/share/texmf-dist/fonts/type1/public/pscyr/ercourb.pfb></usr/share/te
 xmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texmf-dist/
 fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on cpb2rep.pdf (5 pages, 159292 bytes).
+Output written on cpb2rep.pdf (5 pages, 165093 bytes).
 PDF statistics:
- 145 PDF objects out of 1000 (max. 8388607)
- 119 compressed objects within 2 object streams
+ 147 PDF objects out of 1000 (max. 8388607)
+ 120 compressed objects within 2 object streams
  19 named destinations out of 1000 (max. 500000)
- 83 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 88 words of extra memory for PDF output out of 10000 (max. 10000000)
 
