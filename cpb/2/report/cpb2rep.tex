@@ -23,6 +23,7 @@
 \usepackage{multirow}
 \usepackage{hyperref}
 \usepackage{pscyr}
+\usepackage{qrcode}
 
 \begin{document}
 	\thispagestyle{empty}
@@ -115,12 +116,9 @@ Y_i \in [-2^{15} - X_i;\; 2^{15} - 1], \; \text{если} \; X < 0
 
 Генератор ОДЗ для каждого возможного значения $X_i$ и результат в виде таблицы в формате CSV доступен в следующем репозитории:\\
 \begin{center}
-\href{https://github.com/kupp1/itmo_labs/tree/master/cpb/2}{https://github.com/kupp1/itmo\_labs/tree/master/cpb/2}
+\href{https://github.com/kupp1/itmo_labs/tree/master/cpb/2}{https://github.com/kupp1/itmo\_labs/tree/master/cpb/2}\\~\\
+\qrcode[height=1.3in]{https://github.com/kupp1/itmo_labs/tree/master/cpb/2}
 \end{center} 
-\begin{figure}[H]
-	\centering
-	\includegraphics[scale=0.3]{../link.png}
-\end{figure}
 
 В качестве упрощения можно определить, что результат будет корректен, когда знаки чисел не совпадают, или когда оба числа равны нулю, или когда бит, предшествующий старшему (знаковому) этих чисел  равен нулю:
 \begin{equation}
