@@ -1,0 +1,15 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[english, russian]{babel}
+\usepackage[a4paper,
+                         left=3cm,
+                         top=2cm,
+                         right=1.5cm,
+                         bottom=2cm,
+                         marginparsep=7pt,
+                         marginparwidth=.6in]{geometry}
+
+\begin{document}
+123
+\end{document}

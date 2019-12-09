@@ -1,0 +1,9 @@
+\babel@toc {russian}{}
+\contentsline {section}{\numberline {1}Цель работы}{3}% 
+\contentsline {section}{\numberline {2}Теоретические основы лабораторной работы}{3}% 
+\contentsline {section}{\numberline {3}Протокол измерений}{5}% 
+\contentsline {section}{\numberline {4}Задание 1}{6}% 
+\contentsline {section}{\numberline {5}Задание 2}{6}% 
+\contentsline {section}{\numberline {6}Задание 3}{6}% 
+\contentsline {section}{\numberline {7}Задание 4}{6}% 
+\contentsline {section}{\numberline {8}Вывод}{7}% 
